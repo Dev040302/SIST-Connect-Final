@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".Admin1"
+    android:padding="16dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD Student"
+        android:textSize="24dp"
+        app:cornerRadius="30dp"
+        android:padding="16dp"
+        android:id="@+id/addstu"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Teacher"
+        android:textSize="24dp"
+        app:cornerRadius="30dp"
+        android:padding="16dp"
+        android:id="@+id/addteacher"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Store Billing"
+        android:textSize="24dp"
+        app:cornerRadius="30dp"
+        android:padding="16dp"
+        android:id="@+id/storebilling" />
+
+</LinearLayout>
