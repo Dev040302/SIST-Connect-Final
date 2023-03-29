@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Results"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sem1"
+            android:id="@+id/sem2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Sem-2 CGPA = "
+            android:textSize="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sem2"
+            android:id="@+id/sem3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Sem-3 CGPA = "
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/sem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sem3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Sem-4 CGPA = "
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/sem5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sem4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Sem-5 CGPA = "
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sem5"
+            android:id="@+id/standing"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="Standing CGPA = "
+            android:textSize="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Heading"
+            android:id="@+id/sem1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Sem-1 CGPA = "
+            android:textSize="25dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/standing"
+            android:id="@+id/btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="BACK"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

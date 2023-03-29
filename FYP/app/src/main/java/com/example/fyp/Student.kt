@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
+
 class Student : AppCompatActivity() {
 
     private val fragmentManager = supportFragmentManager
@@ -38,6 +39,13 @@ class Student : AppCompatActivity() {
     fun addpost(){
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.frg,AddPost())
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
+    }
+
+    public fun mvenxt(){
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frg,ResultFragment())
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
     }

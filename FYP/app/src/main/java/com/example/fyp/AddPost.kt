@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.activity_add_student.*
 
-class AddPost() : Fragment(), Parcelable {
+class AddPost() : Fragment(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -24,35 +24,7 @@ class AddPost() : Fragment(), Parcelable {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
-        //var name=view.findViewById<>()
-        if (stdname.text==null) {
-            stdname.setError("Name is required")
-            stdname.requestFocus()
-            return@OnClickListener
-        }
-        if (stdemail.text==null) {
-            stdemail.setError("Enter email")
-            stdemail.requestFocus()
-            return@OnClickListener
-        }
     }
 
-    override fun writeToParcel(parcel: Parcel, flags: Int) {
 
-    }
-
-    override fun describeContents(): Int {
-        return 0
-    }
-
-    companion object CREATOR : Parcelable.Creator<AddPost> {
-        override fun createFromParcel(parcel: Parcel): AddPost {
-            return AddPost(parcel)
-        }
-
-        override fun newArray(size: Int): Array<AddPost?> {
-            return arrayOfNulls(size)
-        }
-    }
 }
