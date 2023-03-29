@@ -1,12 +1,17 @@
 package com.example.fyp
 
+import android.app.ProgressDialog
 import android.content.ContentValues
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ProgressBar
+import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DataSnapshot
@@ -35,6 +40,11 @@ class StudentLogin : AppCompatActivity() {
         var btn = findViewById<Button>(R.id.stdloginbtn)
 
         btn.setOnClickListener {
+
+            val mProgressDialog = ProgressDialog(this)
+            mProgressDialog.setTitle("LOG IN")
+            mProgressDialog.setMessage("Please Wait...\nYou Are Logging In")
+            mProgressDialog.show()
 
             var ref = FirebaseDatabase.getInstance().reference.child("Students").child(reg.text.toString())
             var mail=" "

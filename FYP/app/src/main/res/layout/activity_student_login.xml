@@ -26,4 +26,17 @@
         android:text="Log IN"
         android:id="@+id/stdloginbtn"/>
 
+    <ProgressBar
+        android:id="@+id/progress_Bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:indeterminate = "true"
+        android:max="100"
+        android:minWidth="200dp"
+        android:minHeight="50dp"
+        android:visibility="invisible"
+        android:progress="0"
+        android:layout_gravity="center_horizontal"/>
+
 </LinearLayout>
