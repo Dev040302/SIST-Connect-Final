@@ -29,7 +29,7 @@ class BaseLogin : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        fm= activity!!.getSupportFragmentManager()
+        fm= requireActivity().getSupportFragmentManager()
         var stu = view.findViewById<Button>(R.id.lginstu)
         var tea = view.findViewById<Button>(R.id.lginteacher)
         var atm = view.findViewById<Button>(R.id.lginadm)
@@ -47,6 +47,7 @@ class BaseLogin : Fragment() {
             startActivity(intent)
 
         }
+        
 
     }
 

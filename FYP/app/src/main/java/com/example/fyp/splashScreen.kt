@@ -1,16 +1,21 @@
 package com.example.fyp
 
+import android.app.ActivityOptions
+import android.app.TaskStackBuilder.create
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Pair.create
 import android.view.View
-import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
+import java.net.URI.create
+import android.util.*;
+
 
 class splashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,6 +44,21 @@ class splashScreen : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             var intent: Intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
+        }, 5000)
+
+        Handler().postDelayed({
+            // Call next screen
+            val intent = Intent(this@splashScreen, BaseLogin::class.java)
+            // Attach all the elements those you want to animate in design
+            val pairs = arrayOf<Pair<View, String>>(
+                Pair.create(image, "logo_image"),
+                Pair.create(logo, "logo_text")
+            )
+            // Wrap the call in API level 21 or higher
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                val options = ActivityOptions.makeSceneTransitionAnimation(this@splashScreen, *pairs)
+                startActivity(intent, options.toBundle())
+            }
         }, 5000)
 
     }
