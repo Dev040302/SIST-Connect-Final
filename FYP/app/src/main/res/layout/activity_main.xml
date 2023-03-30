@@ -72,7 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Feeds"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="4dp"/>
 
 
             </LinearLayout>
@@ -94,7 +94,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="CGPA"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="4dp"/>
 
 
             </LinearLayout>
