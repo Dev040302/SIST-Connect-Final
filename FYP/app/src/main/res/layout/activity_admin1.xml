@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_gravity="center_vertical"
-    tools:context=".Admin1"
+    tools:context=".Admin_Section.admin_Main"
     android:padding="16dp">
 
     <com.google.android.material.button.MaterialButton

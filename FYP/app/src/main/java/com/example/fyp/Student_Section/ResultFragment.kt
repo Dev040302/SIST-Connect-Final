@@ -1,4 +1,4 @@
-package com.example.fyp
+package com.example.fyp.Student_Section
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,7 +9,7 @@ import com.example.fyp.databinding.FragmentResultBinding
 
 class ResultFragment : Fragment() {
 
-lateinit var std:Student
+lateinit var std: Student
     private var _binding: FragmentResultBinding? = null
 
     private val binding get() = _binding!!

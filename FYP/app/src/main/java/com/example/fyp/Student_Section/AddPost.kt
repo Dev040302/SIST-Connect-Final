@@ -1,13 +1,11 @@
-package com.example.fyp
+package com.example.fyp.Student_Section
 
 import android.os.Bundle
-import android.os.Parcel
-import android.os.Parcelable
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.activity_add_student.*
+import com.example.fyp.R
 
 class AddPost() : Fragment(){
     override fun onCreate(savedInstanceState: Bundle?) {

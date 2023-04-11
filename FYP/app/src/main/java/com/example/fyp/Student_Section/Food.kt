@@ -1,4 +1,4 @@
-package com.example.fyp
+package com.example.fyp.Student_Section
 
 import android.content.Intent
 import android.os.Bundle

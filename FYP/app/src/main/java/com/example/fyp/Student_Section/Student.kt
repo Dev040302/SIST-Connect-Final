@@ -1,8 +1,9 @@
-package com.example.fyp
+package com.example.fyp.Student_Section
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.fyp.R
 
 
 class Student : AppCompatActivity() {
@@ -27,25 +28,25 @@ class Student : AppCompatActivity() {
     }
 
     fun c2(view: View) {val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frg,Feeds())
+        fragmentTransaction.replace(R.id.frg, Feeds())
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()}
 
     fun c3(view: View) {val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frg,Frag3())
+        fragmentTransaction.replace(R.id.frg, CGPA_calc())
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()}
 
     fun addpost(){
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frg,AddPost())
+        fragmentTransaction.replace(R.id.frg, AddPost())
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
     }
 
     public fun mvenxt(){
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frg,ResultFragment())
+        fragmentTransaction.replace(R.id.frg, ResultFragment())
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
     }

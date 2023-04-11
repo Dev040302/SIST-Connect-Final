@@ -6,64 +6,102 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_gravity="center_vertical"
-    tools:context=".AddStudent"
+    tools:context=".Admin_Section.AddStudent"
     android:padding="16dp">
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/ic_baseline_person_add_24"
-        android:id="@+id/stdimg"/>
-
-    <EditText
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="   Name"
-        android:id="@+id/stdname"
-        android:inputType="text"/>
+        android:layout_height="match_parent">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="   Register NO"
-        android:id="@+id/stdregisterno"
-        android:inputType="number"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="   Phone Number"
-        android:id="@+id/stdphnno"
-        android:inputType="number"
-        />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_baseline_person_add_24"
+                android:id="@+id/stdimg"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="   DOB"
-        android:id="@+id/stddob"
-        android:inputType="date"
-        />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="   Name"
+                android:id="@+id/stdname"
+                android:inputType="text"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="   Email"
-        android:id="@+id/stdemail"
-        android:inputType="textEmailAddress"
-        />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="   Register NO"
+                android:id="@+id/stdregisterno"
+                android:inputType="number"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ADD Student"
-        android:id="@+id/addstubtn"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="   Phone Number"
+                android:id="@+id/stdphnno"
+                android:inputType="number"
+                />
 
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:id="@+id/summatxt"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="   DOB"
+                android:id="@+id/stddob"
+                android:inputType="date"
+                />
 
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="   Email"
+                android:id="@+id/stdemail"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="   Year"
+                android:id="@+id/stdyear"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="   Department"
+                android:id="@+id/stdDept"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="   Couse"
+                android:id="@+id/stdcrse"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="   Gender"
+                android:id="@+id/stdgndr"
+                android:inputType="text"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD Student"
+                android:id="@+id/addstubtn"/>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.fyp
+package com.example.fyp.Admin_Section
 
 import android.app.ProgressDialog
 import android.content.Intent
@@ -8,6 +8,7 @@ import android.provider.MediaStore
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.fyp.R
 import com.google.android.gms.tasks.OnFailureListener
 import com.google.android.gms.tasks.OnSuccessListener
 import com.google.firebase.auth.FirebaseAuth
@@ -19,9 +20,7 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_add_student.*
-import kotlinx.android.synthetic.main.items.*
 import java.io.IOException
-import java.util.*
 
 
 class AddStudent : AppCompatActivity() {
@@ -73,6 +72,30 @@ class AddStudent : AppCompatActivity() {
                 return@OnClickListener
             }
 
+            if (stdDept.text==null) {
+                stdDept.setError("Enter Date Of Birth")
+                stdDept.requestFocus()
+                return@OnClickListener
+            }
+
+            if (stdyear.text==null) {
+                stdyear.setError("Enter Date Of Birth")
+                stdyear.requestFocus()
+                return@OnClickListener
+            }
+
+            if (stdcrse.text==null) {
+                stdcrse.setError("Enter Date Of Birth")
+                stdcrse.requestFocus()
+                return@OnClickListener
+            }
+
+            if (stdgndr.text==null) {
+                stdgndr.setError("Enter Date Of Birth")
+                stdgndr.requestFocus()
+                return@OnClickListener
+            }
+
             if (stdimg.getDrawable()==null){
                 Toast.makeText(this, "Please Choose A Photo", Toast.LENGTH_SHORT).show()
                 return@OnClickListener
@@ -85,9 +108,17 @@ class AddStudent : AppCompatActivity() {
             ref.child("phoneno").setValue(stdphnno.text.toString())
             ref.child("registerno").setValue(stdregisterno.text.toString())
             ref.child("dob").setValue(stddob.text.toString())
+            ref.child("department").setValue(stdDept.text.toString())
+            ref.child("year").setValue(stdyear.text.toString())
+            ref.child("Course").setValue(stdcrse.text.toString())
+            ref.child("Gender").setValue(stdgndr.text.toString())
             UploadImage(stdregisterno.text.toString())
 
-            auth.createUserWithEmailAndPassword(stdemail.text.toString(),stddob.text.toString())
+            auth.createUserWithEmailAndPassword(stdemail.text.toString(),stddob.text.toString()).addOnSuccessListener {
+
+                FirebaseDatabase.getInstance().reference.child("Users").child(auth.currentUser!!.uid).setValue(stdregisterno.text.toString().toInt())
+
+            }
 
 
 

@@ -1,29 +1,21 @@
-package com.example.fyp
+package com.example.fyp.Student_Section
 
 import android.app.ProgressDialog
 import android.content.ContentValues
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ProgressBar
-import android.widget.TextView
-import com.google.firebase.auth.FirebaseAuth
+import androidx.appcompat.app.AppCompatActivity
+import com.example.fyp.R
+import com.example.fyp.auth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.ktx.Firebase
-import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.activity_add_student.*
-
-private lateinit var auth: FirebaseAuth
-
 
 class StudentLogin : AppCompatActivity() {
 
@@ -54,7 +46,7 @@ class StudentLogin : AppCompatActivity() {
                     mail= dataSnapshot.child("email").getValue().toString()
                     auth.signInWithEmailAndPassword(mail,pass.text.toString()).addOnSuccessListener {
 
-                        var intent: Intent = Intent(this@StudentLogin,Student::class.java)
+                        var intent: Intent = Intent(this@StudentLogin, Student::class.java)
                         startActivity(intent)
 
                     }

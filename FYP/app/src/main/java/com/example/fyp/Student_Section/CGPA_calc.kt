@@ -1,4 +1,4 @@
-package com.example.fyp
+package com.example.fyp.Student_Section
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -10,9 +10,9 @@ import android.widget.EditText
 import android.widget.ScrollView
 import com.example.fyp.databinding.FragmentFrag3Binding
 
-class Frag3 : Fragment() {
+class CGPA_calc : Fragment() {
 
-    lateinit var std:Student
+    lateinit var std: Student
 
     private var _binding: FragmentFrag3Binding? = null
 

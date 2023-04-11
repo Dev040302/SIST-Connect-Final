@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import com.example.fyp.Admin_Section.Admin_Login
+import com.example.fyp.Student_Section.StudentLogin
 
 class BaseLogin : Fragment() {
 
@@ -36,14 +38,14 @@ class BaseLogin : Fragment() {
 
         stu.setOnClickListener {
 
-            var intent:Intent = Intent(activity,StudentLogin::class.java)
+            var intent:Intent = Intent(activity, StudentLogin::class.java)
             startActivity(intent)
 
         }
 
         atm.setOnClickListener {
 
-            var intent:Intent = Intent(activity,Admin::class.java)
+            var intent:Intent = Intent(activity, Admin_Login::class.java)
             startActivity(intent)
 
         }
