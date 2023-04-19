@@ -26,11 +26,15 @@
             </intent-filter>
 
         </activity>
+
         <activity
             android:name=".Student_Section.StudentLogin"
             android:exported="false" />
         <activity
             android:name=".Admin_Section.AddStudent"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Section.AddTeacher"
             android:exported="false" />
         <activity
             android:name=".Admin_Section.admin_Main"

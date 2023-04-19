@@ -17,6 +17,7 @@ import com.example.fyp.Data.items
 import com.example.fyp.Data.order
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.database.*
+import com.example.fyp.R
 
 var total=0
 lateinit var totaltxt: TextView

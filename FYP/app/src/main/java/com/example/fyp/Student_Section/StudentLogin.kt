@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fyp.R
-import com.example.fyp.auth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -25,7 +24,7 @@ class StudentLogin : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_student_login)
 
-        auth = Firebase.auth
+        val auth = Firebase.auth
 
         var reg = findViewById<EditText>(R.id.stdreg)
         var pass = findViewById<EditText>(R.id.stdpass)

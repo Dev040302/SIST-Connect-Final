@@ -12,8 +12,12 @@ class admin_Main : AppCompatActivity() {
         setContentView(R.layout.activity_admin1)
 
         addstu.setOnClickListener {
-
             var intent: Intent = Intent(this, AddStudent::class.java)
+            startActivity(intent)
+        }
+
+        addteacher.setOnClickListener {
+            var intent: Intent = Intent(this, AddTeacher::class.java)
             startActivity(intent)
         }
 

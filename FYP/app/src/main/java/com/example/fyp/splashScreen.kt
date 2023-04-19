@@ -49,16 +49,9 @@ class splashScreen : AppCompatActivity() {
         Handler().postDelayed({
             // Call next screen
             val intent = Intent(this@splashScreen, BaseLogin::class.java)
-            // Attach all the elements those you want to animate in design
-            val pairs = arrayOf<Pair<View, String>>(
-                Pair.create(image, "logo_image"),
-                Pair.create(logo, "logo_text")
-            )
             // Wrap the call in API level 21 or higher
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                val options = ActivityOptions.makeSceneTransitionAnimation(this@splashScreen, *pairs)
-                startActivity(intent, options.toBundle())
-            }
+                startActivity(intent)
+
         }, 5000)
 
     }

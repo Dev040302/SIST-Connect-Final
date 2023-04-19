@@ -2,4 +2,33 @@
     <string name="app_name">SIST CONNECT</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Year">
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+        <item>V</item>
+    </string-array>
+
+    <string-array name="Section">
+        <item>A1</item>
+        <item>A2</item>
+        <item>A3</item>
+        <item>A4</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="Batch">
+        <item>B.E - CSE</item>
+        <item>B.E - EEE</item>
+        <item>B.E - ECE</item>
+        <item>B.E - MECH</item>
+        <item>B.E - AERO</item>
+        <item>M.E - CSE</item>
+        <item>M.E - EEE</item>
+        <item>M.E - ECE</item>
+        <item>M.E - MECH</item>
+        <item>M.E - AERO</item>
+    </string-array>
 </resources>

@@ -9,6 +9,10 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fyp.*
 import com.example.fyp.Data.items
+import com.example.fyp.Student_Section.item
+import com.example.fyp.Student_Section.qnt
+import com.example.fyp.Student_Section.total
+import com.example.fyp.Student_Section.totaltxt
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import java.nio.file.Files.size
