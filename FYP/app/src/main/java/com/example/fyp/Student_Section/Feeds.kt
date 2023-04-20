@@ -151,7 +151,7 @@ class Feeds : Fragment() {
             progressDialog.show()
 
             // Defining the child of storageReference
-            val ref1 = FirebaseStorage.getInstance().reference?.child("Feedimages/")
+            val ref1 = FirebaseStorage.getInstance().reference?.child("Feedimages/" + getRandomString(5))
 
             // adding listeners on upload
             // or failure of image
@@ -206,6 +206,13 @@ class Feeds : Fragment() {
     override fun onStop() {
         super.onStop()
         adapter.stopListening()
+    }
+
+    fun getRandomString(length: Int) : String {
+        val allowedChars = ('A'..'Z') + ('a'..'z') + ('0'..'9')
+        return (1..length)
+            .map { allowedChars.random() }
+            .joinToString("")
     }
 
 
