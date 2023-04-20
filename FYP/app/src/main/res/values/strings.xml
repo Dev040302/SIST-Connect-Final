@@ -20,15 +20,15 @@
     </string-array>
 
     <string-array name="Batch">
-        <item>B.E - CSE</item>
-        <item>B.E - EEE</item>
-        <item>B.E - ECE</item>
-        <item>B.E - MECH</item>
-        <item>B.E - AERO</item>
-        <item>M.E - CSE</item>
-        <item>M.E - EEE</item>
-        <item>M.E - ECE</item>
-        <item>M.E - MECH</item>
-        <item>M.E - AERO</item>
+        <item>BE - CSE</item>
+        <item>BE - EEE</item>
+        <item>BE - ECE</item>
+        <item>BE - MECH</item>
+        <item>BE - AERO</item>
+        <item>ME - CSE</item>
+        <item>ME - EEE</item>
+        <item>ME - ECE</item>
+        <item>ME - MECH</item>
+        <item>ME - AERO</item>
     </string-array>
 </resources>

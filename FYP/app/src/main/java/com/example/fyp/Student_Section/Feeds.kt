@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.food_order.Adaptor.itemsAdaptor
+import com.example.fyp.Adaptor.feedsAdaptor
 import com.example.fyp.Data.feeds
 import com.example.fyp.Data.items
 import com.example.fyp.R
@@ -33,7 +34,7 @@ import java.io.IOException
 
 class Feeds : Fragment() {
     lateinit var Rc: RecyclerView
-    lateinit var adapter: itemsAdaptor
+    lateinit var adapter: feedsAdaptor
     lateinit var mbase: DatabaseReference
     private var filePath: Uri? = null
     private val PICK_IMAGE_REQUEST = 22
@@ -76,7 +77,7 @@ class Feeds : Fragment() {
             }
             builder.setPositiveButton("Add Post") { dialog: DialogInterface?, which: Int ->
 
-                UploadImage(reg,caption)
+                UploadImage(reg.text.toString(),caption.text.toString())
 
             }
             // create and show the alert dialog
@@ -91,13 +92,13 @@ class Feeds : Fragment() {
 
         Rc.layoutManager = LinearLayoutManager(context)
 
-        val option: FirebaseRecyclerOptions<items> =
-            FirebaseRecyclerOptions.Builder<items>().setQuery(
+        val option: FirebaseRecyclerOptions<feeds> =
+            FirebaseRecyclerOptions.Builder<feeds>().setQuery(
                 mbase,
-                items::class.java
+                feeds::class.java
             ).build()
 
-        adapter = itemsAdaptor(option)
+        adapter = feedsAdaptor(option)
 
         Rc.adapter = adapter
 
@@ -131,7 +132,7 @@ class Feeds : Fragment() {
             try {
 
                 // Setting image on image view using Bitmap
-                val bitmap = MediaStore.Images.Media.getBitmap(activity?.contentResolver ?: ,filePath)
+                val bitmap = MediaStore.Images.Media.getBitmap(requireActivity().contentResolver,filePath)
                 img.setImageBitmap(bitmap)
                 //UploadImage()
             } catch (e: IOException) {
@@ -170,7 +171,7 @@ class Feeds : Fragment() {
                         // Handle any errors
                     })
 
-                    Picasso.get().load(ref1.downloadUrl.toString()).into(stdimg)
+                    Picasso.get().load(ref1.downloadUrl.toString()).into(img)
                 }
                 ?.addOnFailureListener { e -> // Error, Image not uploaded
                     progressDialog.dismiss()
@@ -196,6 +197,15 @@ class Feeds : Fragment() {
                 }
         }
 
+    }
+    override fun onStart() {
+        super.onStart()
+        adapter.startListening()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        adapter.stopListening()
     }
 
 

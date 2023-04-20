@@ -24,7 +24,6 @@ class splashScreen : AppCompatActivity() {
         supportActionBar!!.hide()
         setContentView(R.layout.activity_splash_screen)
 
-        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 // Remember that you should never show the action bar if the
 // status bar is hidden, so hide that too if necessary.
         actionBar?.hide()
@@ -48,7 +47,7 @@ class splashScreen : AppCompatActivity() {
 
         Handler().postDelayed({
             // Call next screen
-            val intent = Intent(this@splashScreen, BaseLogin::class.java)
+            val intent = Intent(this@splashScreen, LoginActivity::class.java)
             // Wrap the call in API level 21 or higher
                 startActivity(intent)
 
