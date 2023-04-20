@@ -112,6 +112,7 @@ class AddStudent : AppCompatActivity() {
             ref.child("year").setValue(stdyear.text.toString())
             ref.child("Course").setValue(stdcrse.text.toString())
             ref.child("Gender").setValue(stdgndr.text.toString())
+            ref.child("Blood-Group").setValue(stdbg.text.toString())
             UploadImage(stdregisterno.text.toString())
 
             auth.createUserWithEmailAndPassword(stdemail.text.toString(),stddob.text.toString()).addOnSuccessListener {
