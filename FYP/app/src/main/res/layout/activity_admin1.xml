@@ -25,10 +25,19 @@
         app:cornerRadius="30dp"
         android:padding="16dp"
         android:id="@+id/addteacher"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bill Number"
+        android:layout_margin="8dp"
+        android:id="@+id/billnumber"
+        />
+
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Store Billing"
+        android:text="Show Bill"
         android:textSize="24dp"
         app:cornerRadius="30dp"
         android:padding="16dp"

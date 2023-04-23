@@ -49,16 +49,7 @@ class Food : Fragment() {
         totaltxt=view.findViewById(R.id.ttl)
 
         mbase = FirebaseDatabase.getInstance().getReference().child("Items")
-
-        var item = items("Samosa",1)
-        mbase.push().setValue(item)
-
-        item = items("Paani poori",4)
-        mbase.push().setValue(item)
-
-        item = items("Poorata",2)
-        mbase.push().setValue(item)
-
+        
         Rc = view.findViewById(R.id.recyclerview)
 
         Rc.layoutManager = LinearLayoutManager(context)
@@ -103,6 +94,9 @@ class Food : Fragment() {
 
         }
         print(orderid)
+
+
+        (activity as Student).nextcode(orderid, total)
 
 
         setFragmentResult("orderdetails", bundleOf("ordid" to orderid))
