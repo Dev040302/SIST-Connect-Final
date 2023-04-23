@@ -35,13 +35,17 @@ class MainActivity : AppCompatActivity() {
 
         mbase = FirebaseDatabase.getInstance().getReference().child("Items")
 
-        var item = items("Samosa",1)
+        var item = items("Samosa",15)
         mbase.push().setValue(item)
 
-        item = items("Paani poori",4)
+        item = items("Paani poori",30)
         mbase.push().setValue(item)
 
-        item = items("Poorata",2)
+        item = items("Poorata",15)
+        mbase.push().setValue(item)
+        item = items("Soft cone",25)
+        mbase.push().setValue(item)
+        item = items("Watermelon Jiuce",40)
         mbase.push().setValue(item)
 
         Rc = findViewById(R.id.recyclerview)

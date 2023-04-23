@@ -18,6 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/profilepic"
         android:id="@+id/profilename"
+        android:textStyle="bold"
         android:layout_margin="8dp"/>
 
 
