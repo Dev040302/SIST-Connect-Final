@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="ExtraText">
+
+    <include
+        android:id="@+id/bonafidebg"
+        layout="@layout/activity_main" />
+
+    <TextView
+        android:id="@+id/refno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="180dp"
+        android:text="SHD/2021/06/2/R6"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/certidec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:text="This is to certify that $suffix. $name, Register Number $regno is a Bonafide student of our Institution pursuing $year year BACHELOR OF ENGINEERING in COMPUTER SCIENCE AND ENGINEERING during the academic year 2020-2021. He will be
+        completing the course in the year 2023."
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/feestruct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textAlignment="textStart"
+        android:text="kjwdcbwkjbcjkwqbcbqkdbwcwjdcb" />
+
+
+</RelativeLayout>
