@@ -39,15 +39,17 @@
     android:layout_height="wrap_content"
     android:layout_centerVertical="true"
     android:layout_alignParentEnd="true"
+    android:layout_marginHorizontal="8dp"
     >
 
     <Button
+        android:id="@+id/btnadd"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#DF1D1D"
         android:text="-"
-        android:textSize="24dp"
-        android:id="@+id/btnadd"
-        android:layout_alignParentStart="true"/>
+        android:textSize="24dp" />
 
 
     <TextView
@@ -60,13 +62,15 @@
         android:layout_toRightOf="@+id/btnadd"
         android:layout_centerVertical="true"
         />
+
     <Button
+        android:id="@+id/btnsub"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/qnty"
+        android:backgroundTint="#4CAF50"
         android:text="+"
-        android:textSize="24dp"
-        android:id="@+id/btnsub"
-        android:layout_toRightOf="@+id/qnty"/>
+        android:textSize="24dp" />
 
 
 </RelativeLayout>

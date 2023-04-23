@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Section.OrderBill">
+
+    <ImageView
+        android:id="@+id/bgbill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:src="@drawable/logo"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Online"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/gstno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GST No : 33AGRPM2133P1Z0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phone : 044 24500648"
+        app:layout_constraintTop_toBottomOf="@id/gstno"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/faasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fssai Lic No : 12421008002556"
+        app:layout_constraintTop_toBottomOf="@id/phonenumber"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_goneMarginTop="15dp"
+
+        app:layout_constraintTop_toBottomOf="@id/faasi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/canteenstall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Canteen Sales-"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="-275dp"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/Billno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill No : "
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="-300dp"
+        app:layout_constraintTop_toBottomOf="@id/canteenstall"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date : 20/04/2023"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="75dp"
+        app:layout_constraintTop_toBottomOf="@id/canteenstall"
+        app:layout_constraintLeft_toRightOf="@id/Billno"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="55dp"
+        app:layout_goneMarginTop="15dp"
+
+        app:layout_constraintTop_toBottomOf="@id/Billno"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/ItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="-230dp"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Qty"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line2" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="55dp"
+        app:layout_goneMarginTop="15dp"
+
+        app:layout_constraintTop_toBottomOf="@id/ItemName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="50dp"
+    android:layout_marginEnd="50dp"
+    app:layout_constraintTop_toBottomOf="@+id/line3"
+    android:id="@+id/ssbill">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview"
+            android:padding="10dp"
+            android:layout_below="@id/title"/>
+
+    </ScrollView>
+
+</RelativeLayout>
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="55dp"
+        app:layout_goneMarginTop="15dp"
+
+        app:layout_constraintTop_toBottomOf="@id/ssbill"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/thankyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank You "
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

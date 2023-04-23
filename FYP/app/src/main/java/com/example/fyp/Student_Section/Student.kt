@@ -1,5 +1,6 @@
 package com.example.fyp.Student_Section
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -49,6 +50,16 @@ class Student : AppCompatActivity() {
         fragmentTransaction.replace(R.id.frg, ResultFragment())
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
+    }
+
+    public fun nextcode(orderid: String, total: Int) {
+
+        var intent= Intent(this,OrderSummary::class.java)
+        intent.putExtra("orderId",orderid)
+        intent.putExtra("Total", total.toString())
+
+        startActivity(intent)
+
     }
 
 }

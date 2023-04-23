@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.fyp.Admin_Section.Admin_Login
 import com.example.fyp.Student_Section.StudentLogin
+import com.example.fyp.Teacher_Section.Teacher1
 
 class BaseLogin : Fragment() {
 
@@ -46,6 +47,13 @@ class BaseLogin : Fragment() {
         atm.setOnClickListener {
 
             var intent:Intent = Intent(activity, Admin_Login::class.java)
+            startActivity(intent)
+
+        }
+
+        tea.setOnClickListener {
+
+            var intent:Intent = Intent(activity, Teacher1::class.java)
             startActivity(intent)
 
         }
