@@ -61,5 +61,15 @@ class Student : AppCompatActivity() {
         startActivity(intent)
 
     }
+    fun bonafied(view: View) {
+
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frg, ResultFragment())
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
+
+    }
+    fun ID(view: View) {}
+    fun Quiz(view: View) {}
 
 }

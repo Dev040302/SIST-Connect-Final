@@ -6,6 +6,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fyp.R
@@ -44,6 +45,14 @@ class AddStudent : AppCompatActivity() {
             SelectImage()
 
         }
+
+        stdDept.setAdapter(ArrayAdapter(this,android.R.layout.simple_list_item_1,resources.getStringArray(R.array.Department)))
+        stdyear.setAdapter(ArrayAdapter(this,android.R.layout.simple_list_item_1,resources.getStringArray(R.array.Year)))
+        stdcrse.setAdapter(ArrayAdapter(this,android.R.layout.simple_list_item_1,resources.getStringArray(R.array.Course)))
+        stdgndr.setAdapter(ArrayAdapter(this,android.R.layout.simple_list_item_1,resources.getStringArray(R.array.Gender)))
+
+
+
 
         addstubtn.setOnClickListener(View.OnClickListener {
             if (stdname.text==null) {

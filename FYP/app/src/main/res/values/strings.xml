@@ -19,6 +19,26 @@
         <item></item>
     </string-array>
 
+    <string-array name="Gender">
+        <item>M</item><item>F</item>
+    </string-array>
+
+    <string-array name="Department">
+        <item>B.E</item>
+        <item>M.E</item>
+        <item>B.sc</item>
+        <item>M.sc</item>
+    </string-array>
+
+    <string-array name="Course">
+        <item>CSE</item>
+        <item>EEE</item>
+        <item>ECE</item>
+        <item>MECH</item>
+        <ITEM>BIO</ITEM>
+        <item>AERO</item>
+    </string-array>
+
     <string-array name="Batch">
         <item>BE - CSE</item>
         <item>BE - EEE</item>

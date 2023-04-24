@@ -63,7 +63,7 @@
                 android:inputType="textEmailAddress"
                 />
 
-            <EditText
+            <AutoCompleteTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="   Year"
@@ -71,7 +71,7 @@
                 android:inputType="number"
                 />
 
-            <EditText
+            <AutoCompleteTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="   Department"
@@ -79,7 +79,7 @@
                 android:inputType="text"
                 />
 
-            <EditText
+            <AutoCompleteTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="   Couse"
@@ -87,7 +87,7 @@
                 android:inputType="text"
                 />
 
-            <EditText
+            <AutoCompleteTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="   Gender"

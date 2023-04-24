@@ -11,17 +11,6 @@
         layout="@layout/activity_main" />
 
     <TextView
-        android:id="@+id/refno"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="51dp"
-        android:layout_marginTop="180dp"
-        android:text="SHD/2021/06/2/R6"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        />
-    <TextView
         android:id="@+id/certidec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,18 +22,6 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         />
-
-    <TextView
-        android:id="@+id/feestruct"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:textAlignment="textStart"
-        android:text="kjwdcbwkjbcjkwqbcbqkdbwcwjdcb" />
 
 
 </RelativeLayout>
