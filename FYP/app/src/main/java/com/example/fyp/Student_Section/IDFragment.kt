@@ -2,13 +2,12 @@ package com.example.fyp.Student_Section
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.fyp.R
@@ -18,6 +17,16 @@ class IDFragment : Fragment() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+            requireActivity().window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
+            val window: Window = requireActivity().window
+            val wm = requireActivity().windowManager
+            wm.removeViewImmediate(window.getDecorView())
+            wm.addView(window.getDecorView(), window.getAttributes())
+        }
+
+
         super.onCreate(savedInstanceState)
 
     }
