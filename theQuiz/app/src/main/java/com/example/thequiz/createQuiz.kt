@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import com.example.thequiz.databinding.ActivityCreateQuizBinding
+import com.google.firebase.FirebaseApp
 
 class createQuiz : AppCompatActivity() {
      private lateinit var binding: ActivityCreateQuizBinding
@@ -13,6 +14,8 @@ class createQuiz : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityCreateQuizBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        FirebaseApp.initializeApp(this)
 
         binding.btnCreate.setOnClickListener {
             if (binding.name.text.toString().isNotEmpty() && binding.noodques.text.toString().isNotEmpty()) {

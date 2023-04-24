@@ -7,9 +7,12 @@ import android.util.Log
 import android.widget.Toast
 import com.example.thequiz.databinding.ActivityCreateQuizBinding
 import com.example.thequiz.databinding.ActivitySaveQuestionsBinding
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class saveQuestions : AppCompatActivity() {
     private lateinit var binding:ActivitySaveQuestionsBinding
+    lateinit var ref:DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivitySaveQuestionsBinding.inflate(layoutInflater)
@@ -19,13 +22,17 @@ class saveQuestions : AppCompatActivity() {
         val n:Int= noOfQues!!.toInt()
         val finalQuestion=getQuestions(n)
 
+        ref= FirebaseDatabase.getInstance().getReference().child("Quiz").child(name!!)
+
+
+
     }
     fun getQuestions(n:Int):ArrayList<questions>{
         val questions=ArrayList<questions>()
         var i=1
             binding.btnSave.setOnClickListener {
                 if (binding.question.text.toString().isNotEmpty() && binding.answer.text.toString().isNotEmpty()) {
-                    questions.add(saveQuestions())
+                    ref.child(i.toString()).setValue(saveQuestions())
                     if (i == n) {
                         Log.d("question", ArrayList<questions>().toString())
                         val intent= Intent(this,MainActivity::class.java)

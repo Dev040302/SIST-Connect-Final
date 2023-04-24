@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Teacher_Section.Teacher1">
+    tools:context=".Teacher_Section.Classes">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Attandence"
+            android:text="IV B.E-CSE A4"
             android:textSize="24dp"
             app:cornerRadius="30dp"
             android:padding="16dp"
@@ -24,5 +24,4 @@
 
 
     </RelativeLayout>
-
 </RelativeLayout>

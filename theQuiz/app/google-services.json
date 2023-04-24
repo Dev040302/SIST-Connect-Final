@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "882627567310",
+    "firebase_url": "https://sist-applicationfinal-default-rtdb.firebaseio.com",
+    "project_id": "sist-applicationfinal",
+    "storage_bucket": "sist-applicationfinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882627567310:android:f4dfd463399d6aca7c3a9f",
+        "android_client_info": {
+          "package_name": "com.example.food_order"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882627567310-fco619of74316h8q1fg1lmbetgqm0bdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM35R6uCkJTAbR2289Eh6lAwZukESVbgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882627567310-fco619of74316h8q1fg1lmbetgqm0bdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882627567310:android:2c34d636fc6bcda97c3a9f",
+        "android_client_info": {
+          "package_name": "com.example.fyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882627567310-fco619of74316h8q1fg1lmbetgqm0bdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM35R6uCkJTAbR2289Eh6lAwZukESVbgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882627567310-fco619of74316h8q1fg1lmbetgqm0bdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882627567310:android:96139aa9334451207c3a9f",
+        "android_client_info": {
+          "package_name": "com.example.thequiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882627567310-fco619of74316h8q1fg1lmbetgqm0bdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM35R6uCkJTAbR2289Eh6lAwZukESVbgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882627567310-fco619of74316h8q1fg1lmbetgqm0bdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
