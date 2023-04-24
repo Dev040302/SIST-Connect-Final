@@ -1,12 +1,18 @@
 package com.example.fyp.Student_Section
 
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import com.example.fyp.R
+import java.util.concurrent.Executors
 
 class IDFragment : Fragment() {
 
@@ -37,6 +43,34 @@ class IDFragment : Fragment() {
         bgtxt.text="BG:"+a.bloodgroup
         var dobtxt=view.findViewById<TextView>(R.id.dob)
         dobtxt.text="DOB:"+a.dob
+        var depttxt=view.findViewById<TextView>(R.id.department)
+        depttxt.text="Dept:"+a.department
+        var phonenotxt=view.findViewById<TextView>(R.id.phoneno)
+        phonenotxt.text="Phone:"+a.phonenumber
+        var emailtxt=view.findViewById<TextView>(R.id.emailaddress)
+        emailtxt.text="Email:"+a.email
+
+        var imageView=view.findViewById<ImageView>(R.id.photo)
+        val executor = Executors.newSingleThreadExecutor()
+        val handler = Handler(Looper.getMainLooper())
+        var image: Bitmap? = null
+        executor.execute {
+            val imageURL = a.image
+            try {
+                val `in` = java.net.URL(imageURL).openStream()
+                image = BitmapFactory.decodeStream(`in`)
+
+
+                handler.post {
+                    imageView.setImageBitmap(image)
+                }
+            }
+
+            catch (e: Exception) {
+                e.printStackTrace()
+            }
+        }
+
 
     }
 }

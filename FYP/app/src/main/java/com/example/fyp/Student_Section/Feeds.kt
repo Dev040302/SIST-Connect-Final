@@ -23,6 +23,7 @@ import com.example.fyp.R
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.android.gms.tasks.OnFailureListener
 import com.google.android.gms.tasks.OnSuccessListener
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
@@ -55,7 +56,7 @@ class Feeds : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-        var btn = view.findViewById<Button>(R.id.sendbtn)
+        var btn = view.findViewById<FloatingActionButton>(R.id.sendbtn)
 
         btn.setOnClickListener {
 
