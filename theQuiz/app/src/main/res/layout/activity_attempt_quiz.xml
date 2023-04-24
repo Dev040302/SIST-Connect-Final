@@ -10,24 +10,20 @@
 
     <ImageView
         android:id="@+id/logo_image"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:transitionName="logo_image"
-        android:src="@drawable/stblogo"/>
+        android:src="@drawable/attempt_quiz"
+        android:layout_gravity="center"/>
     <TextView
         android:id="@+id/logo_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello there, Welcome"
+        android:text="Ready to take on the challenge"
         android:textSize="40sp"
         android:transitionName="logo_text"
         android:textColor="#000"/>
-    <TextView
-        android:id="@+id/slogan_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enter your name to continue"
-        android:textSize="18sp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/stdreg"
-            android:hint="Enter Your name"
+            android:hint="Name of the quiz maker, please"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -53,7 +49,7 @@
             android:text="GO"
             android:background="#000"
             android:textColor="#fff"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="25dp"
             android:layout_marginBottom="5dp"/>
 
 
@@ -69,5 +65,6 @@
             android:visibility="invisible"
             android:progress="0"
             android:layout_gravity="center_horizontal"/>
+
     </LinearLayout>
 </LinearLayout>

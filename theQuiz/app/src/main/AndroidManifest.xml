@@ -12,6 +12,9 @@
         android:theme="@style/Theme.TheQuiz"
         tools:targetApi="31">
         <activity
+            android:name=".QuizAttemptMain"
+            android:exported="false" />
+        <activity
             android:name=".saveQuestions"
             android:exported="false" />
         <activity
