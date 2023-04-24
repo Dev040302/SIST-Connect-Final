@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
            suffix="Ms"
      certidec.text="This is to certify that $suffix. $name, Register Number $regno is a Bonafide student of our Institution pursuing $year year BACHELOR OF ENGINEERING in COMPUTER SCIENCE AND ENGINEERING during the academic year 2020-2021. He will be " +
              "completing the course in the year 2023."
-       feestruct.text="The expenditure details for the $year year(2021-2022) is as follows:\n"+
-               "Tution fees     Rs.190000\n"+"Others fees   Rs.15000\n"+" Total Fee Rs.205000"
+
+
    }
 }
