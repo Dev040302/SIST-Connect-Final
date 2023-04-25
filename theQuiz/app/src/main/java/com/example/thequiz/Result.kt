@@ -14,8 +14,6 @@ class Result : AppCompatActivity() {
         setContentView(binding.root)
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
-        val userName = intent.getStringExtra("name")
-        binding.tvName.text = userName
 
         val totalQuestions = intent.getIntExtra("size", 0)
         val correctAnswers = intent.getIntExtra("correctans", 0)
