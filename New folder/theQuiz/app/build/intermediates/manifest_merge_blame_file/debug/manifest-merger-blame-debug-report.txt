@@ -1,0 +1,172 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.thequiz"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml
+10
+11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+12    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-database:20.0.4] C:\Users\Dev Anand\.gradle\caches\transforms-3\ca0067d401dffd7be25fc4e42deb504c\transformed\firebase-database-20.0.4\AndroidManifest.xml:25:5-79
+13-->[com.google.firebase:firebase-database:20.0.4] C:\Users\Dev Anand\.gradle\caches\transforms-3\ca0067d401dffd7be25fc4e42deb504c\transformed\firebase-database-20.0.4\AndroidManifest.xml:25:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[com.google.firebase:firebase-database:20.0.4] C:\Users\Dev Anand\.gradle\caches\transforms-3\ca0067d401dffd7be25fc4e42deb504c\transformed\firebase-database-20.0.4\AndroidManifest.xml:26:5-67
+14-->[com.google.firebase:firebase-database:20.0.4] C:\Users\Dev Anand\.gradle\caches\transforms-3\ca0067d401dffd7be25fc4e42deb504c\transformed\firebase-database-20.0.4\AndroidManifest.xml:26:22-64
+15
+16    <permission
+16-->[androidx.core:core:1.9.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\519af7c60f1edad80a7b88dbf1103a1d\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+17        android:name="com.example.thequiz.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.9.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\519af7c60f1edad80a7b88dbf1103a1d\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.9.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\519af7c60f1edad80a7b88dbf1103a1d\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.example.thequiz.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.9.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\519af7c60f1edad80a7b88dbf1103a1d\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.9.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\519af7c60f1edad80a7b88dbf1103a1d\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:5:5-39:19
+23        android:allowBackup="true"
+23-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:6:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.9.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\519af7c60f1edad80a7b88dbf1103a1d\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+25        android:dataExtractionRules="@xml/data_extraction_rules"
+25-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:7:9-65
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:fullBackupContent="@xml/backup_rules"
+28-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:8:9-54
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:9:9-43
+30        android:label="@string/app_name"
+30-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:10:9-41
+31        android:supportsRtl="true"
+31-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:11:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.TheQuiz" >
+33-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:12:9-45
+34        <activity
+34-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:14:9-16:40
+35            android:name="com.example.thequiz.Result"
+35-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:15:13-35
+36            android:exported="false" />
+36-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:16:13-37
+37        <activity
+37-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:17:9-19:40
+38            android:name="com.example.thequiz.QuizAttemptMain"
+38-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:18:13-44
+39            android:exported="false" />
+39-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:19:13-37
+40        <activity
+40-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:20:9-22:40
+41            android:name="com.example.thequiz.saveQuestions"
+41-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:21:13-42
+42            android:exported="false" />
+42-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:22:13-37
+43        <activity
+43-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:23:9-25:40
+44            android:name="com.example.thequiz.createQuiz"
+44-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:24:13-39
+45            android:exported="false" />
+45-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:25:13-37
+46        <activity
+46-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:26:9-28:40
+47            android:name="com.example.thequiz.AttemptQuiz"
+47-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:27:13-40
+48            android:exported="false" />
+48-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:28:13-37
+49        <activity
+49-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:29:9-38:20
+50            android:name="com.example.thequiz.MainActivity"
+50-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:30:13-41
+51            android:exported="true"
+51-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:31:13-36
+52            android:theme="@style/Theme.TheQuiz.NoActionBar" >
+52-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:32:13-61
+53            <intent-filter>
+53-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:33:13-37:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:34:17-69
+54-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:34:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:36:17-77
+56-->C:\Users\Dev Anand\Documents\GitHub\SIST-Connect-Final\New folder\theQuiz\app\src\main\AndroidManifest.xml:36:27-74
+57            </intent-filter>
+58        </activity>
+59
+60        <service
+60-->[com.google.firebase:firebase-database:20.0.4] C:\Users\Dev Anand\.gradle\caches\transforms-3\ca0067d401dffd7be25fc4e42deb504c\transformed\firebase-database-20.0.4\AndroidManifest.xml:29:9-35:19
+61            android:name="com.google.firebase.components.ComponentDiscoveryService"
+61-->[com.google.firebase:firebase-database:20.0.4] C:\Users\Dev Anand\.gradle\caches\transforms-3\ca0067d401dffd7be25fc4e42deb504c\transformed\firebase-database-20.0.4\AndroidManifest.xml:30:13-84
+62            android:directBootAware="true"
+62-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\4758a4af82856cc63239d68242a19199\transformed\firebase-common-20.1.0\AndroidManifest.xml:35:13-43
+63            android:exported="false" >
+63-->[com.google.firebase:firebase-database:20.0.4] C:\Users\Dev Anand\.gradle\caches\transforms-3\ca0067d401dffd7be25fc4e42deb504c\transformed\firebase-database-20.0.4\AndroidManifest.xml:31:13-37
+64            <meta-data
+64-->[com.google.firebase:firebase-database:20.0.4] C:\Users\Dev Anand\.gradle\caches\transforms-3\ca0067d401dffd7be25fc4e42deb504c\transformed\firebase-database-20.0.4\AndroidManifest.xml:32:13-34:85
+65                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+65-->[com.google.firebase:firebase-database:20.0.4] C:\Users\Dev Anand\.gradle\caches\transforms-3\ca0067d401dffd7be25fc4e42deb504c\transformed\firebase-database-20.0.4\AndroidManifest.xml:33:17-109
+66                android:value="com.google.firebase.components.ComponentRegistrar" />
+66-->[com.google.firebase:firebase-database:20.0.4] C:\Users\Dev Anand\.gradle\caches\transforms-3\ca0067d401dffd7be25fc4e42deb504c\transformed\firebase-database-20.0.4\AndroidManifest.xml:34:17-82
+67        </service>
+68
+69        <activity
+69-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Dev Anand\.gradle\caches\transforms-3\46aae258624b97a6537b584c354001e3\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+70            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+70-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Dev Anand\.gradle\caches\transforms-3\46aae258624b97a6537b584c354001e3\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+71            android:exported="false"
+71-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Dev Anand\.gradle\caches\transforms-3\46aae258624b97a6537b584c354001e3\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+72            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+72-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Dev Anand\.gradle\caches\transforms-3\46aae258624b97a6537b584c354001e3\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+73
+74        <provider
+74-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\4758a4af82856cc63239d68242a19199\transformed\firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
+75            android:name="com.google.firebase.provider.FirebaseInitProvider"
+75-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\4758a4af82856cc63239d68242a19199\transformed\firebase-common-20.1.0\AndroidManifest.xml:27:13-77
+76            android:authorities="com.example.thequiz.firebaseinitprovider"
+76-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\4758a4af82856cc63239d68242a19199\transformed\firebase-common-20.1.0\AndroidManifest.xml:28:13-72
+77            android:directBootAware="true"
+77-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\4758a4af82856cc63239d68242a19199\transformed\firebase-common-20.1.0\AndroidManifest.xml:29:13-43
+78            android:exported="false"
+78-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\4758a4af82856cc63239d68242a19199\transformed\firebase-common-20.1.0\AndroidManifest.xml:30:13-37
+79            android:initOrder="100" />
+79-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\4758a4af82856cc63239d68242a19199\transformed\firebase-common-20.1.0\AndroidManifest.xml:31:13-36
+80
+81        <meta-data
+81-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\7c24f875db83c537c9a8133e39874ae1\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+82            android:name="com.google.android.gms.version"
+82-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\7c24f875db83c537c9a8133e39874ae1\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+83            android:value="@integer/google_play_services_version" />
+83-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\7c24f875db83c537c9a8133e39874ae1\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+84
+85        <provider
+85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\08e12e536f9ad6a8e63b8316883a7eb9\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+86            android:name="androidx.startup.InitializationProvider"
+86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\08e12e536f9ad6a8e63b8316883a7eb9\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+87            android:authorities="com.example.thequiz.androidx-startup"
+87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\08e12e536f9ad6a8e63b8316883a7eb9\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+88            android:exported="false" >
+88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\08e12e536f9ad6a8e63b8316883a7eb9\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+89            <meta-data
+89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\08e12e536f9ad6a8e63b8316883a7eb9\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+90                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+90-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\08e12e536f9ad6a8e63b8316883a7eb9\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+91                android:value="androidx.startup" />
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dev Anand\.gradle\caches\transforms-3\08e12e536f9ad6a8e63b8316883a7eb9\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+92            <meta-data
+92-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Dev Anand\.gradle\caches\transforms-3\cff70c5fc28b3199eb2869e88858a7ba\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+93                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+93-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Dev Anand\.gradle\caches\transforms-3\cff70c5fc28b3199eb2869e88858a7ba\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+94                android:value="androidx.startup" />
+94-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Dev Anand\.gradle\caches\transforms-3\cff70c5fc28b3199eb2869e88858a7ba\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+95        </provider>
+96    </application>
+97
+98</manifest>

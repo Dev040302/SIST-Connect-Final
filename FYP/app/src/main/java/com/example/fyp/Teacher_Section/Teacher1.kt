@@ -19,5 +19,12 @@ class Teacher1 : AppCompatActivity() {
 
         }
 
+        teaquiz.setOnClickListener {
+
+            var intent: Intent = Intent(this, createQuiz::class.java)
+            startActivity(intent)
+
+        }
+
     }
 }

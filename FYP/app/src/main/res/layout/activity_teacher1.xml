@@ -22,6 +22,16 @@
             android:padding="16dp"
             android:id="@+id/teaattn"/>
 
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz"
+            android:textSize="24dp"
+            app:cornerRadius="30dp"
+            android:padding="16dp"
+            android:id="@+id/teaquiz"
+            android:layout_below="@id/teaattn"/>
+
 
 
     </RelativeLayout>

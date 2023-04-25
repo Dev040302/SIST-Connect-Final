@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.example.thequiz.app-mergeDebugResources-36:/layout/activity_save_questions.xml",
+        "source": "com.example.thequiz.app-main-39:/layout/activity_save_questions.xml"
+    },
+    {
+        "merged": "com.example.thequiz.app-mergeDebugResources-36:/layout/activity_attempt_quiz.xml",
+        "source": "com.example.thequiz.app-main-39:/layout/activity_attempt_quiz.xml"
+    },
+    {
+        "merged": "com.example.thequiz.app-mergeDebugResources-36:/layout/activity_create_quiz.xml",
+        "source": "com.example.thequiz.app-main-39:/layout/activity_create_quiz.xml"
+    },
+    {
+        "merged": "com.example.thequiz.app-mergeDebugResources-36:/layout/activity_result.xml",
+        "source": "com.example.thequiz.app-main-39:/layout/activity_result.xml"
+    },
+    {
+        "merged": "com.example.thequiz.app-mergeDebugResources-36:/layout/activity_main.xml",
+        "source": "com.example.thequiz.app-main-39:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.thequiz.app-mergeDebugResources-36:/layout/activity_quiz_attempt_main.xml",
+        "source": "com.example.thequiz.app-main-39:/layout/activity_quiz_attempt_main.xml"
+    }
+]
