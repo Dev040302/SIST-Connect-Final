@@ -13,24 +13,37 @@
         android:layout_centerVertical="true">
 
 
+        <ImageView
+            android:id="@+id/teacherpic"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+
+            android:src="@drawable/teacherpic" />
         <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:text="attendance"
             android:textSize="24dp"
             app:cornerRadius="12dp"
             android:padding="16dp"
-            android:id="@+id/teaattn"/>
+            android:id="@+id/teaattn"
+            android:layout_marginTop="100dp"
+            android:layout_below="@id/teacherpic"/>
+
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Quiz"
             android:textSize="24dp"
-            app:cornerRadius="30dp"
+            app:cornerRadius="12dp"
             android:padding="16dp"
             android:id="@+id/teaquiz"
             android:layout_below="@id/teaattn"/>
+
 
 
 

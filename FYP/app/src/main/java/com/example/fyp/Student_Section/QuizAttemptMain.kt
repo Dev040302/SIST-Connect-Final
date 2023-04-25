@@ -122,7 +122,7 @@ class QuizAttemptMain : AppCompatActivity(), View.OnClickListener{
                             // TODO (STEP 5: Now remove the toast message and launch the result screen which we have created and also pass the user name and score details to it.)
                             // START
                             val intent =
-                                Intent(this@QuizAttemptMain, Result::class.java)
+                                Intent(this@QuizAttemptMain,com.example.fyp.Student_Section.Result::class.java)
                             intent.putExtra("correctans", mCorrectAnswers)
                             intent.putExtra("size", mQuestionsList!!.size)
                             startActivity(intent)

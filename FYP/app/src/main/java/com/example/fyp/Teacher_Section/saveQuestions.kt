@@ -78,7 +78,7 @@ class saveQuestions : AppCompatActivity() {
         val option2=binding.option2.text.toString()
         val option3=binding.option3.text.toString()
         val option4=binding.option4.text.toString()
-        val crctans=binding.answer.text as Int
+        val crctans=binding.answer.text.toString().toInt()
 
         val data=questions(question,option1,option2,option3,option4,crctans)
         return data

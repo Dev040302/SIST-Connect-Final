@@ -33,7 +33,7 @@ class itemsAdaptor(options: FirebaseRecyclerOptions<items>) :
         holder.sub.setOnClickListener {
             holder.qnty.text = (++holder.quantity).toString()
             total=total+Integer.parseInt(holder.Rate.text.toString())
-            totaltxt.text="Total :- " + total
+            totaltxt.text="Total :- ₹" + total
             send(holder.Name.text.toString(),holder.quantity)
         }
 
@@ -41,7 +41,7 @@ class itemsAdaptor(options: FirebaseRecyclerOptions<items>) :
             if(holder.quantity>0) {
                 holder.qnty.text = (--holder.quantity).toString()
                 total=total-Integer.parseInt(holder.Rate.text.toString())
-                totaltxt.text="Total :- " + total
+                totaltxt.text="Total :- ₹" + total
                 send(holder.Name.text.toString(),holder.quantity)
             }
             else{

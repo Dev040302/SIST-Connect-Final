@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img123"
+    android:background="@drawable/img"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:padding="20dp">
@@ -58,7 +58,7 @@
         android:id="@+id/btn_finish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:background="@android:color/white"
         android:text="FINISH"
         android:textColor="@color/purple_700"

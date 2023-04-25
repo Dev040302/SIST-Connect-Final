@@ -26,18 +26,22 @@
             android:layout_height="wrap_content"
             android:text="Student"
             android:textSize="24dp"
-            app:cornerRadius="30dp"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
             android:padding="16dp"
-            android:id="@+id/lginstu"/>
+            android:id="@+id/lginstu"
+            android:backgroundTint="#5AD632"
+            android:backgroundTintMode="screen"/>
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Teacher"
             android:textSize="24dp"
-            app:cornerRadius="30dp"
+            app:cornerRadius="15dp"
             android:padding="16dp"
             android:id="@+id/lginteacher"
-            android:layout_below="@id/lginstu"/>
+            android:layout_below="@id/lginstu"
+            android:backgroundTint="#FF0400"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/lginadm"
@@ -48,7 +52,9 @@
             android:padding="16dp"
             android:text="Admin"
             android:textSize="24dp"
-            app:cornerRadius="30dp" />
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
+            android:backgroundTint="#FCE207"/>
 
     </RelativeLayout>
 
