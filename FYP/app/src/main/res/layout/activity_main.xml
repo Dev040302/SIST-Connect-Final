@@ -48,7 +48,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FOOD"
+                    android:text="Canteen"
                     android:layout_margin="4dp"/>
 
 
@@ -110,7 +110,8 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/bonafide"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -131,7 +132,8 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/id_card_svgrepo_com"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -152,12 +154,13 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/chat"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chat"
+                    android:text="Forum"
                     android:layout_margin="8dp"/>
 
 
@@ -173,7 +176,8 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/quiz_icon"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
