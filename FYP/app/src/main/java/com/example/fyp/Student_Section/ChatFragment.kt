@@ -6,10 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.anonymous_chat.ItemsViewModel
+import com.example.food_order.Adaptor.chatAdaptor
+import com.example.fyp.Adaptor.feedsAdaptor
+import com.example.fyp.Data.chat
+import com.example.fyp.Data.feeds
 import com.example.fyp.R
+import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
@@ -19,6 +26,7 @@ import kotlinx.android.synthetic.main.fragment_chat.*
 class ChatFragment : Fragment() {
     var name:String = (activity as Student).name
     var dept:String = (activity as Student).department
+    lateinit var adapter: chatAdaptor
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,19 +50,20 @@ class ChatFragment : Fragment() {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 val data = ArrayList<ItemsViewModel>()
                 if (dataSnapshot.exists()) {
-                    for (d in dataSnapshot.getChildren()) {
-                        var key = d.key.toString()
-                        var id=dataSnapshot.child(key).child("id").getValue().toString()
-                        var msg = dataSnapshot.child(key).child("msg").getValue().toString()
-                        data.add(ItemsViewModel(id,msg))
-                    }
-                    val adapter = chatAdapter(data)
 
-                    recyclerview.adapter = adapter
+                    var Rc = view.findViewById<RecyclerView>(R.id.recyclerview)
 
-                    val adp=recyclerview.adapter
+                    Rc.layoutManager = LinearLayoutManager(context)
 
-                    recyclerview.smoothScrollToPosition(adp!!.itemCount-1)
+                    val option: FirebaseRecyclerOptions<chat> =
+                        FirebaseRecyclerOptions.Builder<chat>().setQuery(
+                            ref,
+                            chat::class.java
+                        ).build()
+
+                    adapter = chatAdaptor(option)
+
+                    Rc.adapter = adapter
                 }
                 else{
                     var first=ref.push()
@@ -71,5 +80,14 @@ class ChatFragment : Fragment() {
 
         } )
 
+    }
+    override fun onStart() {
+        super.onStart()
+        adapter.startListening()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        adapter.stopListening()
     }
 }
