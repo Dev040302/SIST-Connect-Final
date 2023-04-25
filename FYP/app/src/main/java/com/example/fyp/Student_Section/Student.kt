@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.fyp.Admin_Section.Admin_Login
 import com.example.fyp.R
 import com.google.android.gms.common.internal.FallbackServiceBroker
 import com.google.firebase.auth.FirebaseAuth
@@ -139,7 +140,12 @@ class Student : AppCompatActivity() {
         fragmentTransaction.commit()
 
     }
-    fun Quiz(view: View) {}
+    fun Quiz(view: View) {
+
+        var intent:Intent = Intent(this, AttemptQuiz::class.java)
+        startActivity(intent)
+
+    }
     fun Chat(view: View) {
 
         val fragmentTransaction = fragmentManager.beginTransaction()

@@ -1,19 +1,19 @@
-package com.example.thequiz
+package com.example.fyp.Teacher_Section
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.example.thequiz.databinding.ActivityCreateQuizBinding
-import com.example.thequiz.databinding.ActivitySaveQuestionsBinding
+import com.example.fyp.Data.questions
+import com.example.fyp.databinding.ActivitySaveQuestionsBinding
 import com.google.firebase.FirebaseApp
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class saveQuestions : AppCompatActivity() {
-    private lateinit var binding:ActivitySaveQuestionsBinding
-    lateinit var ref:DatabaseReference
+    private lateinit var binding: ActivitySaveQuestionsBinding
+    lateinit var ref: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -40,7 +40,7 @@ class saveQuestions : AppCompatActivity() {
                 ref.child(i.toString()).setValue(saveQuestions())
                 if (i == n) {
                     Log.d("question", ArrayList<questions>().toString())
-                    val intent= Intent(this,MainActivity::class.java)
+                    val intent= Intent(this,Teacher1::class.java)
                     intent.putExtra("name",intent.getStringExtra("Name"))
                     Toast.makeText(
                         this,
