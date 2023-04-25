@@ -1,72 +1,46 @@
 package com.example.thequiz
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
+import android.widget.Toast
+import com.example.thequiz.databinding.ActivityAttemptQuizBinding
+import com.google.firebase.FirebaseApp
 import com.google.firebase.database.*
-import java.util.*
-import kotlin.collections.ArrayList
 
 class AttemptQuiz : AppCompatActivity() {
-
-    lateinit var ref:DatabaseReference
-    var n=0
-    var questions=ArrayList<questions>()
-    lateinit var today:String
-
+    private lateinit var binding:ActivityAttemptQuizBinding
+    lateinit var ref: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_attempt_quiz)
+        binding= ActivityAttemptQuizBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        FirebaseApp.initializeApp(this)
 
-        val calender = Calendar.getInstance()
+        binding.goBtn.setOnClickListener{
+           if(binding.Creatorname.text.toString().isNotEmpty()){
 
-        val year = calender.get(Calendar.YEAR)
-        val month = calender.get(Calendar.MONTH) + 1
-        val day = calender.get(Calendar.DAY_OF_MONTH)
-        val date = "$year-$month-$day"
-        today=date
+               ref= FirebaseDatabase.getInstance().reference.child("Quiz").child(binding.Creatorname.text.toString())
+               ref.child("n").addValueEventListener(object: ValueEventListener {
+                   override fun onDataChange(snapshot: DataSnapshot) {
+                       val intent = Intent(this@AttemptQuiz, QuizAttemptMain::class.java)
+                       val name=binding.Creatorname.text.toString()
+                       intent.putExtra("creatorname",name)
+                       startActivity(intent)
+                   }
 
-
-
-        var stdbtn = findViewById<Button>(R.id.stdloginbtn)
-        var editText = findViewById<EditText>(R.id.stdreg)
-
-        stdbtn.setOnClickListener {
-
-            ref=FirebaseDatabase.getInstance().reference.child("Quiz").child(editText.text.toString())
-            ref.child("n").addValueEventListener(object:ValueEventListener{
-                override fun onDataChange(snapshot: DataSnapshot) {
-                    n= snapshot.getValue() as Int
-                    getquestions()
-                }
-
-                override fun onCancelled(error: DatabaseError) {
-                    TODO("Not yet implemented")
-                }
-
-
-            })
+                   override fun onCancelled(error: DatabaseError) {
+                       Toast.makeText(this@AttemptQuiz, "please enter the Valid quiz maker name", Toast.LENGTH_SHORT)
+                           .show()
+                   }
+               })
+           }
+            else{
+               Toast.makeText(this, "please enter the quiz maker name", Toast.LENGTH_SHORT)
+                   .show()
+           }
 
 
         }
-
-    }
-
-    private fun getquestions() {
-
-        for(i in 1..n+1){
-            ref.addValueEventListener(object:ValueEventListener{
-                override fun onDataChange(snapshot: DataSnapshot) {
-                    var a:questions = snapshot.child(i.toString()).value as questions
-                    questions.add(a)
-                }
-
-                override fun onCancelled(error: DatabaseError) {
-                    TODO("Not yet implemented")
-                }
-            })
-        }
-
     }
 }
