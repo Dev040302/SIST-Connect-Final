@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.anonymous_chat.ItemsViewModel
@@ -24,8 +26,8 @@ import kotlinx.android.synthetic.main.fragment_chat.*
 
 
 class ChatFragment : Fragment() {
-    var name:String = (activity as Student).name
-    var dept:String = (activity as Student).department
+    lateinit var name:String
+    lateinit var dept:String
     lateinit var adapter: chatAdaptor
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,31 +46,34 @@ class ChatFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         recyclerview.layoutManager = LinearLayoutManager(activity)
+        name=(activity as Student).name
+        dept=(activity as Student).department
+
         var ref= Firebase.database.reference.child("Messages").child(dept)
+
+        var Rc = view.findViewById<RecyclerView>(R.id.recyclerview)
+
+        Rc.layoutManager = LinearLayoutManager(context)
+
+        val option: FirebaseRecyclerOptions<chat> =
+            FirebaseRecyclerOptions.Builder<chat>().setQuery(
+                ref,
+                chat::class.java
+            ).build()
+
+        adapter = chatAdaptor(option)
+
+        Rc.adapter = adapter
 
         ref.addValueEventListener( object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 val data = ArrayList<ItemsViewModel>()
                 if (dataSnapshot.exists()) {
 
-                    var Rc = view.findViewById<RecyclerView>(R.id.recyclerview)
 
-                    Rc.layoutManager = LinearLayoutManager(context)
-
-                    val option: FirebaseRecyclerOptions<chat> =
-                        FirebaseRecyclerOptions.Builder<chat>().setQuery(
-                            ref,
-                            chat::class.java
-                        ).build()
-
-                    adapter = chatAdaptor(option)
-
-                    Rc.adapter = adapter
                 }
                 else{
-                    var first=ref.push()
-                    first.child("id").setValue(dept)
-                    first.child("msg").setValue("This Thread is for $dept department")
+
 
                 }
 
@@ -78,7 +83,18 @@ class ChatFragment : Fragment() {
                 TODO("Not yet implemented")
             }
 
+
+
         } )
+
+        var b = view.findViewById<Button>(R.id.sendbtn)
+        var txt = view.findViewById<EditText>(R.id.msg)
+
+        b.setOnClickListener {
+            var ref=Firebase.database.reference.child("Messages").child(dept).push()
+            ref.setValue(chat(name,txt.text.toString()))
+        }
+
 
     }
     override fun onStart() {

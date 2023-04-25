@@ -157,7 +157,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:text="Chat"
+=======
+                    android:text="CHAT"
+>>>>>>> a83590c0802f18e2c1a0596a598e48a1cfe9ac0e
                     android:layout_margin="8dp"/>
 
 

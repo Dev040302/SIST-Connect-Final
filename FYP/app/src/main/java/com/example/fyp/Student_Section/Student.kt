@@ -36,6 +36,8 @@ class Student : AppCompatActivity() {
 
         var userid= FirebaseAuth.getInstance().currentUser!!.uid
 
+
+
         FirebaseDatabase.getInstance().reference.child("Users").child(userid).addValueEventListener( object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 registernumber=snapshot.value.toString()
