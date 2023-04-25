@@ -21,7 +21,6 @@ class QuizAttemptMain : AppCompatActivity(),View.OnClickListener{
     var n=0
     var size=0
     private var mCurrentPosition: Int = 1 // Default and the first question positionl
-
     private var mSelectedOptionPosition: Int = 0
     private var mCorrectAnswers: Int = 0
     private var mUserName: String? = null
@@ -30,7 +29,6 @@ class QuizAttemptMain : AppCompatActivity(),View.OnClickListener{
         super.onCreate(savedInstanceState)
         binding= inflate(layoutInflater)
         setContentView(binding.root)
-
 
         FirebaseApp.initializeApp(this)
 

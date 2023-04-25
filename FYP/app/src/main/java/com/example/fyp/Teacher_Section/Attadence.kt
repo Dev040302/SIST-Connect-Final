@@ -73,8 +73,8 @@ class Attadence : AppCompatActivity() {
         FirebaseDatabase.getInstance().reference.child("Students").child(i.toString()).addValueEventListener( object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 var name=snapshot.child("name").value.toString()
-                attdnme.text=name
-                attdreg.text=i.toString()
+                attdne.text="Name: $name"
+                attdreg.text="Register Number $i"
                 Log.e("Level-1",name)
                 var imagesrc=snapshot.child("image").value.toString()
                 var imageView=findViewById<ImageView>(R.id.attdimg)
