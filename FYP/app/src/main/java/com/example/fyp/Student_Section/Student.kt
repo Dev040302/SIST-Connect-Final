@@ -138,5 +138,13 @@ class Student : AppCompatActivity() {
 
     }
     fun Quiz(view: View) {}
+    fun Chat(view: View) {
+
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frg, ChatFragment())
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
+
+    }
 
 }

@@ -47,6 +47,7 @@ class Attadence : AppCompatActivity() {
                 n= snapshot.child("n").getValue() as Long
                 start = snapshot.child("start").getValue() as Long
                 Log.e("Level-1","n" + n.toString())
+                Log.e("Level-1","n" + start.toString())
 
                 listinfo(start)
             }
