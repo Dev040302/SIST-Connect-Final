@@ -19,7 +19,7 @@ class QuizAttemptMain : AppCompatActivity(),View.OnClickListener{
     lateinit var ref: DatabaseReference
     val mQuestionsList=ArrayList<questions>()
     var n=0
-    val size=mQuestionsList.size
+    var size=0
     private var mCurrentPosition: Int = 1 // Default and the first question positionl
 
     private var mSelectedOptionPosition: Int = 0
@@ -48,7 +48,7 @@ class QuizAttemptMain : AppCompatActivity(),View.OnClickListener{
 
 
         })
-
+        size=mQuestionsList.size
         setQuestion()
 
         binding.tvOptionOne.setOnClickListener(this)
