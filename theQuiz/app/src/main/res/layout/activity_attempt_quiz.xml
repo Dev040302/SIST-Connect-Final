@@ -31,19 +31,24 @@
         android:layout_marginBottom="20dp"
         android:orientation="vertical">
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/stdreg"
-            android:hint="Name of the quiz maker, please"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-            <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="20dp">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/Creatorname"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:imeOptions="actionGo"
+                android:hint="Name of the quiz maker, please"
+                android:inputType="textCapWords"
+                android:textColor="#363A43"
+                android:textColorHint="#7A8089" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
-            android:id="@+id/stdloginbtn"
+            android:id="@+id/go_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="GO"
