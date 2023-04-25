@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">882627567310-fco619of74316h8q1fg1lmbetgqm0bdv.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://sist-applicationfinal-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">882627567310</string>
+    <string name="google_api_key" translatable="false">AIzaSyBM35R6uCkJTAbR2289Eh6lAwZukESVbgA</string>
+    <string name="google_app_id" translatable="false">1:882627567310:android:96139aa9334451207c3a9f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBM35R6uCkJTAbR2289Eh6lAwZukESVbgA</string>
+    <string name="google_storage_bucket" translatable="false">sist-applicationfinal.appspot.com</string>
+    <string name="project_id" translatable="false">sist-applicationfinal</string>
+</resources>
