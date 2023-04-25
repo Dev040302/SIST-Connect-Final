@@ -38,15 +38,17 @@
             android:padding="16dp"
             android:id="@+id/lginteacher"
             android:layout_below="@id/lginstu"/>
+
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/lginadm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/lginteacher"
+            android:layout_marginTop="-1dp"
+            android:padding="16dp"
             android:text="Admin"
             android:textSize="24dp"
-            app:cornerRadius="30dp"
-            android:padding="16dp"
-            android:id="@+id/lginadm"
-            android:layout_below="@id/lginteacher"/>
+            app:cornerRadius="30dp" />
 
     </RelativeLayout>
 

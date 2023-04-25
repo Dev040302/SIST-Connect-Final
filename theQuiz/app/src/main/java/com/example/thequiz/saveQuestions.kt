@@ -30,7 +30,7 @@ class saveQuestions : AppCompatActivity() {
     fun getQuestions(n:Int):ArrayList<questions>{
         val questions=ArrayList<questions>()
         var i=1
-            binding.btnSave.setOnClickListener {
+        binding.btnSave.setOnClickListener {
                 if (binding.question.text.toString().isNotEmpty() && binding.answer.text.toString().isNotEmpty()) {
                     ref.child(i.toString()).setValue(saveQuestions())
                     if (i == n) {
