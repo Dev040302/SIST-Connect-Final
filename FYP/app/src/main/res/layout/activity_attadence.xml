@@ -18,7 +18,16 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/attdimg"
         android:layout_centerHorizontal="true"
+        android:text="NAME"
         android:id="@+id/attdnme"
+        android:layout_marginTop="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attdnme"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/attdreg"
+        android:text="Register Number"
         android:layout_marginTop="24dp"/>
         
         <LinearLayout
@@ -34,7 +43,7 @@
                 android:layout_height="200dp"
                 android:layout_weight="1"
                 android:backgroundTint="#F44336"
-                android:text="ABSCENT" />
+                android:text="ABSENT" />
 
             <Button
                 android:id="@+id/prsbtn"

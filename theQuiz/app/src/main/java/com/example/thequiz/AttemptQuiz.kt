@@ -5,16 +5,27 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import com.google.firebase.database.*
+import java.util.*
+import kotlin.collections.ArrayList
 
 class AttemptQuiz : AppCompatActivity() {
 
     lateinit var ref:DatabaseReference
     var n=0
-    val questions=ArrayList<questions>()
+    var questions=ArrayList<questions>()
+    lateinit var today:String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_attempt_quiz)
+
+        val calender = Calendar.getInstance()
+
+        val year = calender.get(Calendar.YEAR)
+        val month = calender.get(Calendar.MONTH) + 1
+        val day = calender.get(Calendar.DAY_OF_MONTH)
+        val date = "$year-$month-$day"
+        today=date
 
 
 

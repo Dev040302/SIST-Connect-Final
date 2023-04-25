@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.Toast
 import com.example.thequiz.databinding.ActivityCreateQuizBinding
 import com.example.thequiz.databinding.ActivitySaveQuestionsBinding
+import com.google.firebase.FirebaseApp
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -15,8 +16,12 @@ class saveQuestions : AppCompatActivity() {
     lateinit var ref:DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        FirebaseApp.initializeApp(this)
+
         binding= ActivitySaveQuestionsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         val name=intent.getStringExtra("Name")
         val noOfQues= intent.getStringExtra("NoOfQues")
         val n:Int= noOfQues!!.toInt()

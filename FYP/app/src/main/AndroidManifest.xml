@@ -18,10 +18,10 @@
         android:theme="@style/Theme.FYP"
         tools:targetApi="31">
         <activity
-            android:name=".Attadence"
+            android:name=".Teacher_Section.Attadence"
             android:exported="false" />
         <activity
-            android:name=".Classes"
+            android:name=".Teacher_Section.Classes"
             android:exported="false" />
         <activity
             android:name=".Student_Section.OrderSummary"
