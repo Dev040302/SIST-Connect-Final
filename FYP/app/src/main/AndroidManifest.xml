@@ -19,6 +19,9 @@
         android:windowSoftInputMode="adjustResize"
         tools:targetApi="31">
         <activity
+            android:name=".QuizAttemptMain"
+            android:exported="false" />
+        <activity
             android:name=".Student_Section.QuizAttemptMain"
             android:exported="false" />
         <activity
