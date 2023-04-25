@@ -172,7 +172,7 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/quiz"
+                    android:src="@drawable/quiz_icon"
                     android:layout_margin="8dp"/>
 
                 <TextView
