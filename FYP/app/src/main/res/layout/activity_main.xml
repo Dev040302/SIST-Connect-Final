@@ -109,13 +109,13 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/img"
+                    android:src="@drawable/bonafide"
                     android:layout_margin="8dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bonafied"
+                    android:text="Bonafide"
                     android:layout_margin="8dp"/>
 
 
@@ -130,7 +130,7 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/img"
+                    android:src="@drawable/id_card_svgrepo_com"
                     android:layout_margin="8dp"/>
 
                 <TextView
@@ -151,13 +151,13 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/img"
+                    android:src="@drawable/chat"
                     android:layout_margin="8dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C"
+                    android:text="Chat"
                     android:layout_margin="8dp"/>
 
 
@@ -172,7 +172,7 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/img"
+                    android:src="@drawable/quiz"
                     android:layout_margin="8dp"/>
 
                 <TextView
