@@ -1,6 +1,7 @@
 package com.example.fyp.Teacher_Section
 
 import android.content.ContentValues.TAG
+import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +11,9 @@ import android.os.Looper
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.Toast
 import com.example.fyp.R
+import com.example.fyp.Student_Section.StudentLogin
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_attadence.*
 import java.util.*
@@ -47,6 +50,7 @@ class Attadence : AppCompatActivity() {
                 n= snapshot.child("n").getValue() as Long
                 start = snapshot.child("start").getValue() as Long
                 Log.e("Level-1","n" + n.toString())
+                Log.e("Level-1","n" + start.toString())
 
                 listinfo(start)
             }
@@ -120,5 +124,10 @@ class Attadence : AppCompatActivity() {
 
 
     }
+        else{
+            Toast.makeText(this,"Attandence Taken And Saved",Toast.LENGTH_LONG).show()
+            var intent: Intent = Intent(this, Teacher1::class.java)
+            startActivity(intent)
+        }
     }
 }
