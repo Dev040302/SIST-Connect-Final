@@ -25,6 +25,7 @@ var n:Long = 0
 var start:Long = 0
 lateinit var today:String
 
+
 class Attadence : AppCompatActivity() {
 
 

@@ -44,7 +44,7 @@
                         android:id="@+id/context"
                         android:textColor="#A30000"
                         android:textAlignment="center"
-                        android:text="*Put '0' if Adsent in any Subject\n or Having Arrear"
+                        android:text="*Put '0' if Absent in any Subject\n or Having Arrear"
                         />
 
                     <EditText

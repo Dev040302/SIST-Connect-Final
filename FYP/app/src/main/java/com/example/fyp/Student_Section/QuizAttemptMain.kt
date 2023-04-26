@@ -8,48 +8,29 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import com.example.fyp.Data.questions
+import com.example.fyp.R
 import com.example.fyp.databinding.ActivityQuizAttemptMainBinding
-import com.example.fyp.databinding.ActivityQuizAttemptMainBinding.inflate
-import com.google.firebase.FirebaseApp
-import com.google.firebase.database.*
 import kotlin.Result
 
 class QuizAttemptMain : AppCompatActivity(), View.OnClickListener{
     private lateinit var binding: ActivityQuizAttemptMainBinding
-    lateinit var ref: DatabaseReference
-    val mQuestionsList=ArrayList<questions>()
+    var mQuestionsList=ArrayList<questions>()
     var n=0
-    val size=mQuestionsList.size
+    var size=0
     private var mCurrentPosition: Int = 1 // Default and the first question positionl
-
     private var mSelectedOptionPosition: Int = 0
     private var mCorrectAnswers: Int = 0
     private var mUserName: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= inflate(layoutInflater)
+        binding= ActivityQuizAttemptMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        FirebaseApp.initializeApp(this)
-
         val mUserName=intent.getStringExtra("creatorname")
-        ref= FirebaseDatabase.getInstance().reference.child("Quiz").child(mUserName.toString())
-        ref.child("n").addValueEventListener(object: ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                n= snapshot.getValue() as Int
-                getquestions()
-            }
 
-            override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
-            }
-
-
-        })
-
+        mQuestionsList=getquestions(mUserName.toString())
+        size=mQuestionsList.size
         setQuestion()
 
         binding.tvOptionOne.setOnClickListener(this)
@@ -61,21 +42,43 @@ class QuizAttemptMain : AppCompatActivity(), View.OnClickListener{
 
 
     }
-    private fun getquestions() {
-
-        for(i in 1..n+1){
-            ref.addValueEventListener(object: ValueEventListener {
-                override fun onDataChange(snapshot: DataSnapshot) {
-                    var a:questions = snapshot.child(i.toString()).value as questions
-                    mQuestionsList.add(a)
-                }
-
-                override fun onCancelled(error: DatabaseError) {
-                    TODO("Not yet implemented")
-                }
-            })
+    private fun getquestions(name:String):ArrayList<questions> {
+        var list= ArrayList<questions>()
+        var na:questions
+        if(name=="Dev"){
+            na=questions("What is OpenCV","An open-source computer vision library"," An operating system for mobile devices","An open-source database management system","A programming language for web development",1)
+            list.add(na)
+            na=questions("What is machine learning"," A type of software for creating digital art","A method of analyzing text data","A type of computer algorithm that learns from data"," A technique for encrypting online communication",3)
+            list.add(na)
+            na=questions("what is android studio","Integerated DevelopmentEnvironment","database","Web development tool","Dev ops tool",1)
+            list.add(na)
+            na=questions("what is Power BI","Data analytics tool","lithion ion cell","Web service","Dev ops",1)
+            list.add(na)
         }
 
+        if(name=="Deepak"){
+            na=questions("what is s3 in aws","cloud storage for aws","system architecture","dev ops tool","analytics tool",1)
+            list.add(na)
+            na=questions("what is firebase","aws service","relational database","document based database ","azure web services",4)
+            list.add(na)
+            na=questions("what is variable?","it is a data type","it is a function","it is a pointer","it is address of a data",4)
+            list.add(na)
+            na=questions("what is android studio","Integerated DevelopmentEnvironment","database","Web development tool","Dev ops tool",1)
+            list.add(na)
+        }
+        if(name=="Mani"){
+            na=questions("what is Power BI","Data analytics tool","lithion ion cell","Web service","Dev ops",1)
+            list.add(na)
+            na=questions("what is variable?","it is a data type","it is a function","it is a pointer","it is address of a data",4)
+            list.add(na)
+            na=questions("what is firebase","aws service","relational database","document based database ","azure web services",4)
+            list.add(na)
+            na=questions("what is android studio","Integerated DevelopmentEnvironment","database","Web development tool","Dev ops tool",1)
+            list.add(na)
+
+        }
+
+        return list
     }
 
     override fun onClick(v: View?) {
@@ -119,8 +122,7 @@ class QuizAttemptMain : AppCompatActivity(), View.OnClickListener{
                             // TODO (STEP 5: Now remove the toast message and launch the result screen which we have created and also pass the user name and score details to it.)
                             // START
                             val intent =
-                                Intent(this@QuizAttemptMain, Result::class.java)
-                            intent.putExtra("name", mUserName)
+                                Intent(this@QuizAttemptMain,com.example.fyp.Student_Section.Result::class.java)
                             intent.putExtra("correctans", mCorrectAnswers)
                             intent.putExtra("size", mQuestionsList!!.size)
                             startActivity(intent)
@@ -167,7 +169,7 @@ class QuizAttemptMain : AppCompatActivity(), View.OnClickListener{
         }
 
         binding.progressBar.progress = mCurrentPosition
-        binding.tvProgress.text = "$mCurrentPosition" + "/" + "$n"
+        binding.tvProgress.text = "$mCurrentPosition" + "/" + "4"
 
         binding.tvQuestion.text = question.question
         binding.tvOptionOne.text = question.option1

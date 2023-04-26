@@ -9,20 +9,27 @@
     tools:context=".Admin_Section.admin_Main"
     android:padding="16dp">
 
+    <ImageView
+        android:id="@+id/adminbg"
+        android:src="@drawable/adminbg"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"/>
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ADD Student"
-        android:textSize="24dp"
-        app:cornerRadius="30dp"
+        android:textSize="20dp"
+        app:cornerRadius="15dp"
         android:padding="16dp"
         android:id="@+id/addstu"/>
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Teacher"
-        android:textSize="24dp"
-        app:cornerRadius="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="2dp"
+        app:cornerRadius="15dp"
         android:padding="16dp"
         android:id="@+id/addteacher"/>
 
@@ -30,17 +37,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Bill Number"
-        android:layout_margin="8dp"
+        android:layout_margin="20dp"
         android:id="@+id/billnumber"
         />
 
     <com.google.android.material.button.MaterialButton
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Show Bill"
-        android:textSize="24dp"
-        app:cornerRadius="30dp"
+        android:textSize="18dp"
+        app:cornerRadius="10dp"
         android:padding="16dp"
+        android:layout_gravity="center_horizontal"
         android:id="@+id/storebilling" />
+
 
 </LinearLayout>

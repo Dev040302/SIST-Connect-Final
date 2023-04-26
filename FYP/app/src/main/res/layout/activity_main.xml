@@ -39,8 +39,8 @@
                 android:onClick="c1">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:src="@drawable/food"
                     android:layout_margin="4dp"
                     android:layout_gravity="center_horizontal"/>
@@ -48,7 +48,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FOOD"
+                    android:text="Canteen"
                     android:layout_margin="4dp"/>
 
 
@@ -62,8 +62,8 @@
                 android:onClick="c2">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:src="@drawable/baseline_dynamic_feed_24"
                     android:layout_margin="4dp"
                     android:layout_gravity="center_horizontal"/>
@@ -84,8 +84,8 @@
                 android:onClick="c3">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:src="@drawable/baseline_calculate_24"
                     android:layout_margin="4dp"
                     android:layout_gravity="center_horizontal"/>
@@ -110,13 +110,14 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/bonafide"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Bonafide"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="4dp"/>
 
 
             </LinearLayout>
@@ -131,13 +132,14 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/id_card_svgrepo_com"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ID"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="4dp"/>
 
 
             </LinearLayout>
@@ -152,13 +154,14 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/chat"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chat"
-                    android:layout_margin="8dp"/>
+                    android:text="Forum"
+                    android:layout_margin="4dp"/>
 
 
             </LinearLayout>
@@ -173,13 +176,14 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/quiz_icon"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Quiz"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="4dp"/>
             </LinearLayout>
         </LinearLayout>
     </HorizontalScrollView>
