@@ -28,9 +28,7 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.activity_add_student.*
 import kotlinx.android.synthetic.main.activity_add_student.stdimg
-import kotlinx.android.synthetic.main.add_teacher.*
 import java.io.IOException
 
 class Feeds : Fragment() {
@@ -142,7 +140,7 @@ class Feeds : Fragment() {
         }
     }
 
-    private fun UploadImage(registerno: String,content:String){
+    private fun UploadImage(registerno: EditText, content: EditText){
         var link=""
         if (filePath != null) {
 
