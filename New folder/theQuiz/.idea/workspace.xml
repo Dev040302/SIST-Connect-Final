@@ -9,33 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f964d055-fd81-43b3-86e1-bf37a244fb6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/java/com/example/fyp/Data/questions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/java/com/example/fyp/Student_Section/AttemptQuiz.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/java/com/example/fyp/Student_Section/QuizAttemptMain.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/java/com/example/fyp/Student_Section/Result.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/java/com/example/fyp/Teacher_Section/createQuiz.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/java/com/example/fyp/Teacher_Section/saveQuestions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/res/drawable/attempt_quiz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/res/drawable/correct_option_border_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/res/drawable/default_option_border_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/res/drawable/ic_trophy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/res/drawable/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/res/drawable/selected_option_border_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/res/drawable/wrong_option_border_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/res/layout/activity_attempt_quiz.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/res/layout/activity_create_quiz.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/res/layout/activity_quiz_attempt_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/res/layout/activity_result.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../FYP/app/src/main/res/layout/activity_save_questions.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FYP/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../FYP/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FYP/app/src/main/java/com/example/fyp/Student_Section/Student.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../FYP/app/src/main/java/com/example/fyp/Student_Section/Student.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FYP/app/src/main/java/com/example/fyp/Teacher_Section/Teacher1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../FYP/app/src/main/java/com/example/fyp/Teacher_Section/Teacher1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FYP/app/src/main/res/drawable/img.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FYP/app/src/main/res/layout/activity_teacher1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../FYP/app/src/main/res/layout/activity_teacher1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/thequiz/saveQuestions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/thequiz/saveQuestions.kt" afterDir="false" />
-    </list>
+    <list default="true" id="f964d055-fd81-43b3-86e1-bf37a244fb6b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

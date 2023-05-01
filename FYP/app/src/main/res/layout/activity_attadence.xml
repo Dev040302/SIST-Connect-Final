@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:id="@+id/attdimg"
             android:scaleType="fitXY"
-            android:src="@drawable/deepak"
+            android:src="@drawable/baseline_person_24"
             tools:ignore="MissingConstraints" />
     </com.google.android.material.card.MaterialCardView>
 
