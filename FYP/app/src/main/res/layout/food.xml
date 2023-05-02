@@ -106,7 +106,7 @@
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="send"
+            android:text="Pay"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:backgroundTint="#75F14D"
