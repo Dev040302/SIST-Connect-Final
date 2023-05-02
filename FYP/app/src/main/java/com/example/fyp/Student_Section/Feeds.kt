@@ -15,10 +15,8 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.food_order.Adaptor.itemsAdaptor
 import com.example.fyp.Adaptor.feedsAdaptor
 import com.example.fyp.Data.feeds
-import com.example.fyp.Data.items
 import com.example.fyp.R
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.android.gms.tasks.OnFailureListener
@@ -28,7 +26,6 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.activity_add_student.stdimg
 import java.io.IOException
 
 class Feeds : Fragment() {
@@ -140,7 +137,7 @@ class Feeds : Fragment() {
         }
     }
 
-    private fun UploadImage(registerno: EditText, content: EditText){
+    private fun UploadImage(registerno: String, content: String){
         var link=""
         if (filePath != null) {
 
