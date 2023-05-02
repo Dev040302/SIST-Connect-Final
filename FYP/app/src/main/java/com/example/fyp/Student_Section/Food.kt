@@ -1,6 +1,5 @@
 package com.example.fyp.Student_Section
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -48,7 +47,7 @@ class Food : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         totaltxt=view.findViewById(R.id.ttl)
 
-        mbase = FirebaseDatabase.getInstance().getReference().child("Items")
+        mbase = FirebaseDatabase.getInstance().getReference().child("Items").child("Juice")
         
         Rc = view.findViewById(R.id.recyclerview)
 
@@ -69,6 +68,15 @@ class Food : Fragment() {
         sendbtn.setOnClickListener {
             placeorder()
         }
+    }
+
+    public fun Tiffin() {
+
+        adapter.stopListening()
+        list(FirebaseDatabase.getInstance().getReference().child("Items").child("Tiffin"))
+
+
+
     }
 
     private fun placeorder() {
@@ -138,6 +146,25 @@ class Food : Fragment() {
     override fun onStop() {
         super.onStop()
         adapter.stopListening()
+    }
+
+    fun list(refk: DatabaseReference) {
+
+
+
+        Rc.layoutManager = LinearLayoutManager(context)
+
+        val option: FirebaseRecyclerOptions<items> =
+            FirebaseRecyclerOptions.Builder<items>().setQuery(
+                refk,
+                items::class.java
+            ).build()
+
+        adapter = itemsAdaptor(option)
+
+        Rc.adapter = adapter
+        adapter.startListening()
+
     }
 
 
