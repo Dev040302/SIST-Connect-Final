@@ -28,7 +28,7 @@ class itemsAdaptor(options: FirebaseRecyclerOptions<items>) :
 
     override fun onBindViewHolder(holder: itemsViewholder, position: Int, model: items) {
         holder.Name.text = model.getName()
-        holder.Rate.text = "₹"+model.getRate().toString()
+        holder.Rate.text = model.getRate().toString()
 
         holder.sub.setOnClickListener {
             holder.qnty.text = (++holder.quantity).toString()
