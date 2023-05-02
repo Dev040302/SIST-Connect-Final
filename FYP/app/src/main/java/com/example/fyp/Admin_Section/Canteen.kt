@@ -9,6 +9,7 @@ import com.example.fyp.Data.items
 import com.example.fyp.R
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_admin1.*
+import kotlinx.android.synthetic.main.activity_canteen.*
 
 class Canteen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
