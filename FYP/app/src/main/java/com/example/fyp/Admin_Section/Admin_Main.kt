@@ -22,6 +22,12 @@ class admin_Main : AppCompatActivity() {
         }
 
 
+canteen.setOnClickListener {
+
+    var intent: Intent = Intent(this, Canteen::class.java)
+    startActivity(intent)
+
+}
 
         storebilling.setOnClickListener {
 

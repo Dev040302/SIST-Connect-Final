@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Section.Canteen"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/path"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Category"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Name"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Item Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Rate"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Item To MENU"
+        android:textSize="18dp"
+        app:cornerRadius="10dp"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bill Number"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/billnumber"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Bill"
+        android:textSize="18dp"
+        app:cornerRadius="10dp"
+        android:padding="16dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/storebilling" />
+
+</LinearLayout>
