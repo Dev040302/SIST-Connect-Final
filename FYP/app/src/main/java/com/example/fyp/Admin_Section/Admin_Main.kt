@@ -29,19 +29,6 @@ canteen.setOnClickListener {
 
 }
 
-        storebilling.setOnClickListener {
-
-            if(billnumber.text!=null) {
-
-                var intent: Intent = Intent(this, OrderBill::class.java)
-                intent.putExtra("orderId",billnumber.text.toString())
-                startActivity(intent)
-
-
-            }
-
-        }
-
 
     }
 }
