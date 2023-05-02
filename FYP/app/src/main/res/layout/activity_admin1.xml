@@ -33,6 +33,16 @@
         android:padding="16dp"
         android:id="@+id/addteacher"/>
 
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food Court"
+        android:textSize="20dp"
+        android:layout_marginTop="2dp"
+        app:cornerRadius="15dp"
+        android:padding="16dp"
+        android:id="@+id/canteen"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
