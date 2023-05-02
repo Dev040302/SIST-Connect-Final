@@ -20,11 +20,11 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Juice"
-                android:background="@drawable/border__1"
+                android:backgroundTint="#ED6591"
                 android:layout_margin="8dp"
                 android:padding="5dp"
                 android:textSize="16dp"
@@ -32,44 +32,44 @@
                 android:id="@+id/juice"
                 />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tiffin"
-                    android:background="@drawable/border__1"
+                    android:backgroundTint="#F9BD08 "
                     android:layout_margin="8dp"
                     android:padding="5dp"
                     android:textSize="16dp"
                     android:onClick="Tiffin"
                     android:id="@+id/tiffin"/>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Chat"
-                    android:background="@drawable/border__1"
+                    android:backgroundTint="#08AAF9 "
                     android:layout_margin="8dp"
                     android:padding="5dp"
                     android:textSize="16dp"
                     android:onClick="Chat"
                     android:id="@+id/chat"/>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/chinese"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chinese"
-                    android:background="@drawable/border__1"
                     android:layout_margin="8dp"
-                    android:padding="5dp"
-                    android:textSize="16dp"
+                    android:backgroundTint="#EF441C"
                     android:onClick="Chinese"
-                    android:id="@+id/chinese"/>
+                    android:padding="5dp"
+                    android:text="Chinese"
+                    android:textSize="16dp" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Beverage &amp; Snacks"
-                    android:background="@drawable/border__1"
+                    android:text="pastries&amp;snacks"
+                    android:backgroundTint="#EF9BD9"
                     android:layout_margin="8dp"
                     android:padding="5dp"
                     android:textSize="16dp"
@@ -97,10 +97,13 @@
             android:layout_margin="8dp"
             android:id="@+id/ttl"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="send"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="#75F14D"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:id="@+id/sendbtn"/>
