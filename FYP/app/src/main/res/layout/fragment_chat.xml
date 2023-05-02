@@ -11,13 +11,26 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Chat">
+        <TextView
+            android:id="@+id/forum_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:text="This Forum Belongs To CSE Depatment"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/msg"
-            android:scrollbars="vertical" />
+            android:scrollbars="vertical"
+            android:layout_below="@id/forum_desc"/>
+
 
         <EditText
             android:id="@+id/msg"
@@ -33,12 +46,13 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:id="@+id/sendbtn"
-            app:cornerRadius="30dp"
+            app:cornerRadius="20dp"
             android:gravity="center"
-            app:iconGravity="textStart"
+            app:iconGravity="top"
             app:icon="@drawable/send"
-            app:iconSize="30dp"
-            app:iconPadding="2dp"
+            app:iconSize="20dp"
+            app:iconTint="@color/white"
+            android:backgroundTint="#23ABB4 "
 
             />
 
