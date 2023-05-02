@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="8dp"
-        android:background="#66D9FF"
+        android:background="@drawable/border__1"
         android:backgroundTint="#66D9FF">
 
         <TextView
@@ -20,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="19dp"
+            android:layout_marginRight="8dp"
             android:text="DEV"
             android:textColor="@color/white"
             android:textSize="16dp"
@@ -31,6 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/id"
             android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
             android:text="DEV"
             android:textColor="@color/black"
             android:textSize="20dp" />
