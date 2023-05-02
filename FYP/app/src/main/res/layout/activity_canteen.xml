@@ -43,6 +43,8 @@
         android:textSize="18dp"
         app:cornerRadius="6dp"
         android:padding="8dp"
+        android:backgroundTint="#E6F48D"
+        android:textColor="@color/black"
         android:layout_margin="16dp"
         android:layout_gravity="center_horizontal"
         android:id="@+id/button" />
@@ -62,6 +64,8 @@
         android:textSize="18dp"
         app:cornerRadius="6dp"
         android:padding="8dp"
+        android:backgroundTint="#E6F48D"
+        android:textColor="@color/black"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
         android:id="@+id/storebilling" />
