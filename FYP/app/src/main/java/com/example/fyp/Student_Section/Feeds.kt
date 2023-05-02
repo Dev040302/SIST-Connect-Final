@@ -140,7 +140,7 @@ class Feeds : Fragment() {
         }
     }
 
-    private fun UploadImage(registerno: EditText, content: EditText){
+    private fun UploadImage(registerno: String, content: String){
         var link=""
         if (filePath != null) {
 

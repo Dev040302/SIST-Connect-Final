@@ -20,7 +20,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Juice"
@@ -29,9 +29,10 @@
                 android:padding="5dp"
                 android:textSize="16dp"
                 android:onClick="Juice"
+                android:id="@+id/juice"
                 />
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tiffin"
@@ -39,9 +40,10 @@
                     android:layout_margin="8dp"
                     android:padding="5dp"
                     android:textSize="16dp"
-                    android:onClick="Tiffin"/>
+                    android:onClick="Tiffin"
+                    android:id="@+id/tiffin"/>
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Chat"
@@ -49,9 +51,10 @@
                     android:layout_margin="8dp"
                     android:padding="5dp"
                     android:textSize="16dp"
-                    android:onClick="Chat"/>
+                    android:onClick="Chat"
+                    android:id="@+id/chat"/>
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Chinese"
@@ -59,9 +62,10 @@
                     android:layout_margin="8dp"
                     android:padding="5dp"
                     android:textSize="16dp"
-                    android:onClick="Chinese"/>
+                    android:onClick="Chinese"
+                    android:id="@+id/chinese"/>
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Beverage &amp; Snacks"
@@ -69,7 +73,8 @@
                     android:layout_margin="8dp"
                     android:padding="5dp"
                     android:textSize="16dp"
-                    android:onClick="BS"/>
+                    android:onClick="BS"
+                    android:id="@+id/bs"/>
 
             </LinearLayout>
 

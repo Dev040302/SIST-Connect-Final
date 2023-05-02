@@ -47,15 +47,30 @@ class Food : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         totaltxt=view.findViewById(R.id.ttl)
 
-        mbase = FirebaseDatabase.getInstance().getReference().child("Items").child("Juice")
+        mbase = FirebaseDatabase.getInstance().getReference().child("Items")
         
         Rc = view.findViewById(R.id.recyclerview)
+
+        var Tiffin=view.findViewById<Button>(R.id.tiffin)
+        Tiffin.setOnClickListener { list(mbase.child("Tiffin")) }
+
+        var Juice=view.findViewById<Button>(R.id.juice)
+        Juice.setOnClickListener { list(mbase.child("Juice")) }
+
+        var Chat=view.findViewById<Button>(R.id.chat)
+        Chat.setOnClickListener { list(mbase.child("Chat")) }
+
+        var Chi=view.findViewById<Button>(R.id.chinese)
+        Chi.setOnClickListener { list(mbase.child("Chinese")) }
+
+        var BS=view.findViewById<Button>(R.id.bs)
+        BS.setOnClickListener { list(mbase.child("BS")) }
 
         Rc.layoutManager = LinearLayoutManager(context)
 
         val option: FirebaseRecyclerOptions<items> =
             FirebaseRecyclerOptions.Builder<items>().setQuery(
-                mbase,
+                mbase.child("Juice"),
                 items::class.java
             ).build()
 
@@ -70,14 +85,6 @@ class Food : Fragment() {
         }
     }
 
-    public fun Tiffin() {
-
-        adapter.stopListening()
-        list(FirebaseDatabase.getInstance().getReference().child("Items").child("Tiffin"))
-
-
-
-    }
 
     private fun placeorder() {
         println("got in")
@@ -150,8 +157,7 @@ class Food : Fragment() {
 
     fun list(refk: DatabaseReference) {
 
-
-
+adapter.stopListening()
         Rc.layoutManager = LinearLayoutManager(context)
 
         val option: FirebaseRecyclerOptions<items> =
