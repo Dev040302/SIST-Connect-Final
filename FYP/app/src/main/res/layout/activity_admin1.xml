@@ -43,23 +43,7 @@
         android:padding="16dp"
         android:id="@+id/canteen"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Bill Number"
-        android:layout_margin="20dp"
-        android:id="@+id/billnumber"
-        />
 
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Show Bill"
-        android:textSize="18dp"
-        app:cornerRadius="10dp"
-        android:padding="16dp"
-        android:layout_gravity="center_horizontal"
-        android:id="@+id/storebilling" />
 
 
 </LinearLayout>
