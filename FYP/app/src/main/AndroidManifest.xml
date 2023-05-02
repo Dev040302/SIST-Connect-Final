@@ -18,7 +18,7 @@
         android:theme="@style/Theme.FYP"
         tools:targetApi="31">
         <activity
-            android:name=".Canteen"
+            android:name=".Admin_Section.Canteen"
             android:exported="false" />
         <activity
             android:name=".Student_Section.QuizAttemptMain"
