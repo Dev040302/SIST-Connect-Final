@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.anonymous_chat.ItemsViewModel
@@ -52,6 +53,9 @@ class ChatFragment : Fragment() {
         var ref= Firebase.database.reference.child("Messages").child(dept)
 
         var Rc = view.findViewById<RecyclerView>(R.id.recyclerview)
+        var txtview = view.findViewById<TextView>(R.id.forum_desc)
+
+        forum_desc.text="This Forum Belongs To $dept Depatment"
 
         Rc.layoutManager = LinearLayoutManager(context)
 
