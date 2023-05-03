@@ -112,6 +112,7 @@ class Food : Fragment() {
 
 
         (activity as Student).nextcode(orderid, total)
+        adapter.stopListening()
 
 
         setFragmentResult("orderdetails", bundleOf("ordid" to orderid))
@@ -153,6 +154,12 @@ class Food : Fragment() {
     override fun onStop() {
         super.onStop()
         adapter.stopListening()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        adapter.stopListening()
+        adapter.startListening()
     }
 
     fun list(refk: DatabaseReference) {
